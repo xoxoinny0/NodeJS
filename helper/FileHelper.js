@@ -124,9 +124,18 @@ class FileHelper {
           // 업로드 된 파일이 저장된 최종 경로를 추가한다.
           file.path = join(file.upload_dir, saveName);
           // 업로드 정보에 파일에 접근할 수 있는 URL값 추가
+          /** 정규표현식 gi */
+          // g: 발생할 모든 pattern에 대한 전역 검색
+          // i: 대/소문자 구분 안함
+          // replaceAll("\\", "/");
           file.url = join(process.env.UPLOAD_URL, saveName).replace(/\\/gi, "/");
           // 구성된 최종 업로드 정보를 클라이언트에게 응답결과로 돌려주기 위해 req 객체에게 추가
-          req.file = file;
+          // --> 멀티업로드이기 때문에 req.file객체가 배열 상태라면 배열의 원소로 추가한다.
+          if (req.file instanceof Array) {
+            req.file.push(file);
+          } else {
+            req.file = file;
+          }
 
           // 다음 단계로 백엔드상에 저장할 파일 이름을 전달
           callback(null, saveName);
@@ -135,6 +144,8 @@ class FileHelper {
       /** 용량, 최대 업로드 파일 수 제한 설정 */
       limits: {
         files: parseInt(process.env.UPLOAD_MAX_COUNT),
+        // 환경변수에 걸어준 값은 문자열임
+        // eval() 함수를 사용하면 문자열을 계산할 수 있다.
         fileSize: parseInt(eval(process.env.UPLOAD_MAX_SIZE)),
       },
       /** 업로드 될 파일의 확장자 제한 */

@@ -10,6 +10,7 @@
 const logger = require('../helper/LogHelper');
 const { myip, urlFormat } = require('../helper/UtilHelper');
 const fileHelper = require('../helper/FileHelper');
+const WebHelper = require('../helper/WebHelper');
 /** 내장모듈 */
 const url = require('url');
 const fs = require('fs');
@@ -25,6 +26,9 @@ const methodoverride = require('method-override'); // PUT, DELETE 파라미터 �
 const cookieParser = require('cookie-parser'); // Cookie 처리
 const expressSession = require('express-session'); // Session 처리
 const nodemailer = require('nodemailer'); // 메일발송 --> app.use()로 추가설정 필요 없음
+const cors = require('cors'); // --> cors 접근 허용
+/** 예외처리 관련 클래스 */
+const { BadRequestException, PageNotFoundException } = require('../helper/ExceptionHelper') ;
 
 /*----------------------------------------------------------
 | 2) Express 객체 생성 
@@ -145,6 +149,12 @@ app.use(process.env.UPLOAD_URL, serveStatic(process.env.UPLOAD_DIR));
 
 /** favicon 설정 */
 app.use(serveFavicon(process.env.FAVICON_PATH));
+
+/** CORS 접근 허용 */
+app.use(cors());
+
+/** WebHelper 설정 */
+app.use(WebHelper());
 
 /** 라우터(URL 분배기) 객체 설정 --> 맨 마지막에 설정 */
 const router = express.Router();
@@ -480,7 +490,7 @@ router
             res.status(result_code).send(json);
         });
 
-    /** step-8에서 추가되는 내용 */
+    /** step-7에서 추가되는 내용 */
     // public/send_mail.html
     // 메일 발송이 비동기 처리를 위한 promise객체를 리턴하기 때문에 async~await 문법을 적용해야 한다.
     // 그러므로 router에 연결되는 콜백 함수를 async 함수 형태로 정의한다.
@@ -542,7 +552,7 @@ router
         res.status(rt).send(rtMsg);
     });
 
-    /** step-7에서 추가되는 내용 */
+    /** step-8에서 추가되는 내용 */
     // public/upload_single.html
     router.route('/upload/single').post((req, res, next) => {
         // name속성이 myphoto인 경우에 대한 업로드를 수행 --> multer객체가 생성되고 설정 내용이 실행됨
@@ -569,6 +579,61 @@ router
             res.status(200).send(req.file);
         });
     });
+
+    /** step-9에서 추가되는 내용 */
+    // public/upload_multi.html
+    router.route("/upload/multiple").post((req, res, next) => {
+        // 업로드 결과가 저장될 파일 객체를 배열로 초기화
+        req.file = [];
+
+        // name속성이 myphoto인 경우에 대한 업로드를 수행
+        // --> 설정파일에서 UPLOAD_MAX_COUNT에 지정한 수량만큼만 업로드가 가능하다.
+        // --> UPLOAD_MAX_COUNT값을 -1으로 지정할 경우 수량 제한이 없어진다.
+        const upload = fileHelper.initMulter().array("myphoto");
+
+        upload(req, res, (err) => {
+            console.group("request");
+            console.debug(req.file);
+            console.groupEnd();
+
+            // 에러여부를 확인하여 결과코드와 메시지를 생성한다.
+            try {
+                fileHelper.checkUploadError(err);
+            } catch(err) {
+                console.error(err);
+                res.status(500).send({
+                    rt: err.code,
+                    rtMsg: err.message,
+                });
+                return;
+            }
+
+            // 준비한 결과값 변수를 활용하여 클라이언트에게 응답을 보냄
+            res.status(200).send(req.file);
+        });
+    });
+
+    /** step-10에서 추가되는 내용 */
+    /**
+     * 에러처리 테스트를 위한 임시
+     */
+    router.get('/custom_error', (req, res, next) => {
+        const e = new BadRequestException("개발자가 직접 생성한 에러가 발생하였습니다.");
+
+        // app.js에 명시되어 있는 다음번 app.use()를 호출한다.
+        // 단, app.use()는 에러객체를 파라미터로 받는 콜백이 연결되어 있어야 한다.
+        return next(e);
+    });
+
+    /** step-10에서 추가될 내용 (반드시 모든 route처리의 맨 마지막에 위치해야 함) */
+    // 컨트롤러에서 에러 발생 시 'next(에러객체)'를 호출했을 때 동작할 처리
+    app.use((err, req, res, next) => res.sendError(err));
+
+    // 앞에서 정의하지 않은 기타 URL에 대한 일괄 처리 (무조건 맨 마지막에 정의해야 함)
+    app.use("*", (req, res, next) => res.sendError(new PageNotFoundException()));
+
+
+
 
 
 /*----------------------------------------------------------

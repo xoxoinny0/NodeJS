@@ -1,0 +1,58 @@
+22/12/15 00:40:09 220 [debug] : ---------------------------------------
+22/12/15 00:40:09 223 [debug] : |         Start Express Server         |
+22/12/15 00:40:09 224 [debug] : ---------------------------------------
+22/12/15 00:40:09 225 [debug] : server address => http://192.168.1.106:3001
+22/12/15 00:40:09 225 [debug] : ---------------------------------------
+22/12/15 00:40:25 970 [debug] : 클라이언트가 접속했습니다.
+22/12/15 00:40:25 980 [debug] : [GET] http://192.168.1.106:3001/api_test
+22/12/15 00:40:25 981 [debug] : [client] ::ffff:192.168.1.106 / OS X / Chrome 108.0.0.0 / Apple Mac
+22/12/15 00:40:25 993 [error] : BadRequestException: num1의 값이 없습니다.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/10-Express/app.js:636:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+22/12/15 00:40:26 003 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+22/12/15 00:40:26 004 [debug] : ---------------------------------------
+22/12/15 00:40:38 430 [debug] : 클라이언트가 접속했습니다.
+22/12/15 00:40:38 431 [debug] : [GET] http://192.168.1.106:3001/api_test?num1=30
+22/12/15 00:40:38 432 [debug] : [client] ::ffff:192.168.1.106 / OS X / Chrome 108.0.0.0 / Apple Mac
+22/12/15 00:40:38 442 [error] : BadRequestException: num2의 값이 없습니다.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/10-Express/app.js:638:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+22/12/15 00:40:38 445 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+22/12/15 00:40:38 445 [debug] : ---------------------------------------
+22/12/15 00:40:42 933 [debug] : 클라이언트가 접속했습니다.
+22/12/15 00:40:42 933 [debug] : [GET] http://192.168.1.106:3001/api_test?num1=dd
+22/12/15 00:40:42 934 [debug] : [client] ::ffff:192.168.1.106 / OS X / Chrome 108.0.0.0 / Apple Mac
+22/12/15 00:40:42 939 [error] : BadRequestException: num1은 숫자 형식만 가능합니다.
+    at RegexHelper.field (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:84:19)
+    at RegexHelper.num (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:96:21)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/10-Express/app.js:637:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+22/12/15 00:40:42 944 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/12/15 00:40:42 944 [debug] : ---------------------------------------
+22/12/15 00:41:04 814 [debug] : 클라이언트가 접속했습니다.
+22/12/15 00:41:04 814 [debug] : [GET] http://192.168.1.106:3001/api_test?num1=30&num2=20
+22/12/15 00:41:04 815 [debug] : [client] ::ffff:192.168.1.106 / OS X / Chrome 108.0.0.0 / Apple Mac
+22/12/15 00:41:04 819 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/12/15 00:41:04 820 [debug] : ---------------------------------------

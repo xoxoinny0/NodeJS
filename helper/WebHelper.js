@@ -33,6 +33,10 @@ const WebHelper = () => {
                 json.rt = error.name || "Server Error";
                 json.rtcode = error.code || 500;
                 json.rtmsg = error.message || "요청을 처리하는데 실패했습니다.";
+
+                if (isNaN(json.rtcode)) {
+                    json.rtcode = 500;
+                }
             }
 
             if (data) {

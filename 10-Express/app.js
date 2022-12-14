@@ -10,6 +10,7 @@
 const logger = require('../helper/LogHelper');
 const { myip, urlFormat } = require('../helper/UtilHelper');
 const fileHelper = require('../helper/FileHelper');
+const regexHelper = require('../helper/RegexHelper');
 const WebHelper = require('../helper/WebHelper');
 /** 내장모듈 */
 const url = require('url');
@@ -625,6 +626,27 @@ router
         return next(e);
     });
 
+    /**
+     * 에러처리 테스트를 위한 임시
+     */
+    router.get('/api_test', (req, res, next) => {
+        let { num1, num2 } = req.query;
+
+        try {
+            regexHelper.value(num1, "num1의 값이 없습니다.");
+            regexHelper.num(num1, "num1은 숫자 형식만 가능합니다.");
+            regexHelper.value(num2, "num2의 값이 없습니다.");
+            regexHelper.num(num2, "num2은 숫자 형식만 가능합니다.");
+        } catch (err) {
+            return next(err);
+        }
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+        res.sendResult({ params1: num1, params2: num2, result: num1 + num2 });
+    });
+
     /** step-10에서 추가될 내용 (반드시 모든 route처리의 맨 마지막에 위치해야 함) */
     // 컨트롤러에서 에러 발생 시 'next(에러객체)'를 호출했을 때 동작할 처리
     app.use((err, req, res, next) => res.sendError(err));
@@ -632,8 +654,7 @@ router
     // 앞에서 정의하지 않은 기타 URL에 대한 일괄 처리 (무조건 맨 마지막에 정의해야 함)
     app.use("*", (req, res, next) => res.sendError(new PageNotFoundException()));
 
-
-
+    
 
 
 /*----------------------------------------------------------

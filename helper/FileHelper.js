@@ -6,6 +6,7 @@
 const fs = require("fs");
 const { join, extname } = require("path");
 const multer = require("multer"); // 업로드 모듈(설치필요)
+const thumbnail = require("node-thumbnail"); // 썸네일 이미지 생성 모듈
 
 class FileHelper {
   static #current = null;
@@ -128,7 +129,10 @@ class FileHelper {
           // g: 발생할 모든 pattern에 대한 전역 검색
           // i: 대/소문자 구분 안함
           // replaceAll("\\", "/");
-          file.url = join(process.env.UPLOAD_URL, saveName).replace(/\\/gi, "/");
+          file.url = join(process.env.UPLOAD_URL, saveName).replace(
+            /\\/gi,
+            "/"
+          );
           // 구성된 최종 업로드 정보를 클라이언트에게 응답결과로 돌려주기 위해 req 객체에게 추가
           // --> 멀티업로드이기 때문에 req.file객체가 배열 상태라면 배열의 원소로 추가한다.
           if (req.file instanceof Array) {
@@ -151,17 +155,21 @@ class FileHelper {
       /** 업로드 될 파일의 확장자 제한 */
       fileFilter: (req, file, callback) => {
         // 파일의 확장자를 소문자로 얻기 --> ".png" --> 'png'
-        const extName = extname(file.originalname).substring(1).toLocaleLowerCase();
+        const extName = extname(file.originalname)
+          .substring(1)
+          .toLocaleLowerCase();
 
         // 확장자 제한이 있을 경우 필터링
-        if(process.env.UPLOAD_FILE_FILTER !== undefined) {
-            // "png|jpg|gif".indexOf("png")의 처리 결과를 찾지 못했다면?
-            if (process.env.UPLOAD_FILE_FILTER.indexOf(extName) == -1) {
-                const err = new Error();
-                err.code = 500;
-                err.message = process.env.UPLOAD_FILE_FILTER.replaceAll("|", ", ") + " 형식만 업로드 가능합니다.";
-                return callback(err);
-            }
+        if (process.env.UPLOAD_FILE_FILTER !== undefined) {
+          // "png|jpg|gif".indexOf("png")의 처리 결과를 찾지 못했다면?
+          if (process.env.UPLOAD_FILE_FILTER.indexOf(extName) == -1) {
+            const err = new Error();
+            err.code = 500;
+            err.message =
+              process.env.UPLOAD_FILE_FILTER.replaceAll("|", ", ") +
+              " 형식만 업로드 가능합니다.";
+            return callback(err);
+          }
         }
 
         callback(null, true);
@@ -179,25 +187,76 @@ class FileHelper {
   checkUploadError(err) {
     /** 에러 객체가 존재한다면? */
     if (err) {
-        if (err instanceof multer.MulterError) {
-            switch (err.code) {
-                case "LIMIT_FILE_COUNT":
-                    err.code = 500;
-                    err.message = "업로드 가능한 파일 수를 초과했습니다."
-                    break;
-                case "LIMIT_FILE_SIZE":
-                    err.code = 500;
-                    err.message = "업로드 가능한 파일 용량을 초과했습니다."
-                    break;
-                default:
-                    err.code = 500;
-                    err.message = "알 수 없는 에러가 발생했습니다.";
-                    break;
-            }
+      if (err instanceof multer.MulterError) {
+        switch (err.code) {
+          case "LIMIT_FILE_COUNT":
+            err.code = 500;
+            err.message = "업로드 가능한 파일 수를 초과했습니다.";
+            break;
+          case "LIMIT_FILE_SIZE":
+            err.code = 500;
+            err.message = "업로드 가능한 파일 용량을 초과했습니다.";
+            break;
+          default:
+            err.code = 500;
+            err.message = "알 수 없는 에러가 발생했습니다.";
+            break;
         }
+      }
 
-        // 에러를 발생시킨다.
-        throw err;
+      // 에러를 발생시킨다.
+      throw err;
+    }
+  }
+
+  /**
+   * 썸네일 이미지를 생성하고 썸네일의 위치를 파라미터로 전달받은 JSON에 추가한다.
+   * @param {Obejct} 파일 업로드 결과를 저장하고 있는 JSON 객체
+   */
+  async createThumbnail(file) {
+    // 업로드 될 폴더를 생성함
+    this.mkdirs(process.env.THUMB_DIR);
+
+    // 환경설정 파일에서 썸네일 이미지 크기를 가져온 후 정수 배열로 변환한다.
+    const size = process.env.THUMB_SIZE.split("|").map((v, i) => parseInt(v));
+
+    for (let i = 0; i < size.length; i++) {
+      const v = size[i];
+
+      // 생성될 썸네일 파일의 옵션과 파일이름을 생성
+      const thumb_options = {
+        source: file.path, // 썸네일을 생성할 원본 경로
+        destination: process.env.THUMB_DIR, // 썸네일이 생성될 경로
+        width: v, // 썸네일의 크기(기본값 800)
+        prefix: "thumb_",
+        suffix: '_' + v + 'w',
+        override: true,
+      };
+
+      // 생성될 썸네일 파일과 이름을 예상
+      const basename = file.savename;
+      const filename = basename.substring(0, basename.lastIndexOf("."));
+      const thumbname = thumb_options.prefix + filename + thumb_options.suffix + extname(basename);
+
+      // 프론트엔드에게 전송될 정보에 'thumbnail'이라는 프로퍼티가 없다면 빈 json 형태로 생성
+      if (!file.hasOwnProperty("thumbnail")) {
+        file.thumbnail = {};
+      }
+
+      // 썸네일 정보를 width를 key로 갖는 json 형태로 추가하기 위해 key 이름 생성
+      const key = v + 'w';
+      file.thumbnail[key] = `${process.env.THUMB_URL}/${thumbname}`;
+
+      await thumbnail.thumb(thumb_options);
+    }
+  }
+
+  /**
+   * 배열로 전달되는 업로드 파일 정보를 반복처리하여 썸네일 생성함
+   */
+  async createThumbnailMultiple(files) {
+    for (let i = 0; i < files.length; i++) {
+      await this.createThumbnail(files[i]);
     }
   }
 }

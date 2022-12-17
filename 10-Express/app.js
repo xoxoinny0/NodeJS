@@ -8,7 +8,7 @@
 -----------------------------------------------------------*/
 /** 직접 구현한 모듈 */
 const logger = require('../helper/LogHelper');
-const { myip, urlFormat } = require('../helper/UtilHelper');
+const { myip, urlFormat, sendMail } = require('../helper/UtilHelper');
 const fileHelper = require('../helper/FileHelper');
 const regexHelper = require('../helper/RegexHelper');
 const WebHelper = require('../helper/WebHelper');
@@ -144,6 +144,9 @@ app.use(expressSession({
 // "http://아이피(혹은 도메인):포트번호" 이후의 경로가 router에 등록되지 않은 경로라면
 // static 모듈에 연결된 폴더 안에서 해당 경로를 탐색한다.
 app.use('/', serveStatic(process.env.PUBLIC_PATH));
+
+// 썸네일 이미지가 저장될 폴더를 URL에 노출함
+app.use(process.env.THUMB_URL, serveStatic(process.env.THUMB_DIR));
 
 // 업로드 된 파일이 저장될 폴더를 URL에 노출함
 app.use(process.env.UPLOAD_URL, serveStatic(process.env.UPLOAD_DIR));
@@ -560,7 +563,7 @@ router
         // <input type="file" name="myphoto" />
         const upload = fileHelper.initMulter().single('myphoto');
 
-        upload(req, res, (err) => {
+        upload(req, res, async (err) => {
             console.group('request');
             console.debug(req.file);
             console.groupEnd();
@@ -574,6 +577,19 @@ router
                     rt: err.code,
                     rtMsg: err.message
                 });
+                return;
+            }
+
+            // 썸네일을 생성한다.
+            try {
+                await fileHelper.createThumbnail(req.file);
+            } catch (err) {
+                console.error(err);
+                res.status(500).send({
+                    rt: err.code,
+                    rtmsg: err.message
+                });
+                return;
             }
 
             // 준비한 결과값 변수를 활용하여 클라이언트에게 응답을 보냄
@@ -592,7 +608,7 @@ router
         // --> UPLOAD_MAX_COUNT값을 -1으로 지정할 경우 수량 제한이 없어진다.
         const upload = fileHelper.initMulter().array("myphoto");
 
-        upload(req, res, (err) => {
+        upload(req, res, async(err) => {
             console.group("request");
             console.debug(req.file);
             console.groupEnd();
@@ -605,6 +621,18 @@ router
                 res.status(500).send({
                     rt: err.code,
                     rtMsg: err.message,
+                });
+                return;
+            }
+
+            // 썸네일을 생성한다.
+            try {
+                await fileHelper.createThumbnailMultiple(req.file);
+            } catch (err) {
+                console.error(err);
+                res.status(500).send({
+                    rt: err.code,
+                    rtmsg: err.message
                 });
                 return;
             }
@@ -645,6 +673,36 @@ router
         num2 = parseInt(num2);
 
         res.sendResult({ params1: num1, params2: num2, result: num1 + num2 });
+    });
+
+    // 메일발송 기능 모듈화
+    router.post('/send_mail2', async (req, res, next) => {
+        /** 1) 프론트엔드에서 전달한 사용자 입력값 */
+        const { writer_name, writer_email, receiver_name, receiver_email, subject, content } = req.body;
+
+        /** 2) 입력값 형식 검사 */
+        try {
+            regexHelper.value(writer_name, "발송자 이름을 입력하세요.");
+            regexHelper.value(writer_email, "발송자 이메일을 입력하세요.");
+            regexHelper.email(writer_email, "발송자 이메일 주소가 잘못되었습니다.");
+            regexHelper.value(receiver_name, "수신자 이름을 입력하세요.");
+            regexHelper.value(receiver_email, "수신자 이메일을 입력하세요.");
+            regexHelper.email(receiver_email, "수신자 이메일 주소가 잘못되었습니다.");
+            regexHelper.value(subject, "제목을 입력하세요.");
+            regexHelper.value(content, "내용을 입력하세요.");
+        } catch (err) {
+            return next(err);
+        }
+
+        /** 3) 메일 발송 */
+        try {
+            await sendMail(writer_name, writer_email, receiver_name, receiver_email, subject, content);
+        } catch (err) {
+            return next(err);
+        }
+
+        /** 4) 성공시 결과 처리 */
+        res.sendResult();
     });
 
     /** step-10에서 추가될 내용 (반드시 모든 route처리의 맨 마지막에 위치해야 함) */

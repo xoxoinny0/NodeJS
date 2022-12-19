@@ -24,14 +24,12 @@ console.info(connectionInfo);
         /** (2) mysql 접속 객체 생성 */
         dbcon = await mysql.createConnection(connectionInfo);
         await dbcon.connect();
-    } catch (err) {llkij
+    } catch (err) {
         console.error("[데이터베이스 접속 실패]");
         console.error(err);
         return;
     }
-    FileSystemDirectoryHandle
 
-    k
 
     try {
         /** (3) SQL 실행하기 */

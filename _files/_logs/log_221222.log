@@ -1,0 +1,1545 @@
+22/12/22 00:40:57 907 [debug] : ---------------------------------------
+22/12/22 00:40:57 910 [debug] : |         Start Express Server         |
+22/12/22 00:40:57 911 [debug] : ---------------------------------------
+22/12/22 00:40:57 911 [debug] : server address => http://192.168.0.14:3001
+22/12/22 00:40:57 912 [debug] : ---------------------------------------
+22/12/22 00:43:26 948 [debug] : 클라이언트가 접속했습니다.
+22/12/22 00:43:26 952 [debug] : [POST] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 00:43:26 953 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 00:43:27 053 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 103ms
+22/12/22 00:43:27 055 [debug] : ---------------------------------------
+22/12/22 00:43:27 056 [error] : Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+    at Handshake.Sequence._packetToError (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Protocol._enqueue (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Connection.js:116:18)
+    at Pool.getConnection (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Pool.js:48:16)
+    at Pool.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Pool.js:202:8)
+    at MySQLStore.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-mysql-session/index.js:439:33)
+    at MySQLStore.set (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-mysql-session/index.js:240:8)
+    at Session.save (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-session/session/session.js:72:25)
+    at Session.save (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-session/index.js:406:15)
+    at ServerResponse.end (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-session/index.js:335:21)
+22/12/22 00:44:56 865 [debug] : 클라이언트가 접속했습니다.
+22/12/22 00:44:56 866 [debug] : [POST] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 00:44:56 866 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 00:44:56 930 [error] : Error: ER_NO_SUCH_TABLE: Table 'myschool.sessions' doesn't exist
+    at Query.Sequence._packetToError (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql/lib/Pool.js:199:23)
+    at MySQLStore.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-mysql-session/index.js:439:33)
+    at MySQLStore.get (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-mysql-session/index.js:162:8)
+    at session (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express-session/index.js:485:11)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/helper/WebHelper.js:72:9
+22/12/22 00:44:56 937 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 71ms
+22/12/22 00:44:56 937 [debug] : ---------------------------------------
+22/12/22 00:51:02 700 [debug] : ---------------------------------------
+22/12/22 00:51:02 704 [debug] : |         Start Express Server         |
+22/12/22 00:51:02 705 [debug] : ---------------------------------------
+22/12/22 00:51:02 706 [debug] : server address => http://192.168.0.14:3001
+22/12/22 00:51:02 707 [debug] : ---------------------------------------
+22/12/22 00:52:00 041 [debug] : ---------------------------------------
+22/12/22 00:52:00 045 [debug] : |         Start Express Server         |
+22/12/22 00:52:00 046 [debug] : ---------------------------------------
+22/12/22 00:52:00 047 [debug] : server address => http://192.168.0.14:3001
+22/12/22 00:52:00 049 [debug] : ---------------------------------------
+22/12/22 00:55:19 261 [debug] : 클라이언트가 접속했습니다.
+22/12/22 00:55:19 263 [debug] : [POST] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 00:55:19 264 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 00:55:19 332 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 70ms
+22/12/22 00:55:19 333 [debug] : ---------------------------------------
+22/12/22 00:57:03 109 [debug] : 클라이언트가 접속했습니다.
+22/12/22 00:57:03 110 [debug] : [GET] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 00:57:03 110 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 00:57:03 119 [debug] : [session] cookie=[object Object]
+22/12/22 00:57:03 120 [debug] : [session] username=세션테스트
+22/12/22 00:57:03 120 [debug] : [session] nickname=session test
+22/12/22 00:57:03 132 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 22ms
+22/12/22 00:57:03 133 [debug] : ---------------------------------------
+22/12/22 01:01:29 113 [debug] : ---------------------------------------
+22/12/22 01:01:29 125 [debug] : |         Start Express Server         |
+22/12/22 01:01:29 126 [debug] : ---------------------------------------
+22/12/22 01:01:29 132 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:01:29 133 [debug] : ---------------------------------------
+22/12/22 01:01:52 027 [debug] : ---------------------------------------
+22/12/22 01:01:52 031 [debug] : |         Start Express Server         |
+22/12/22 01:01:52 031 [debug] : ---------------------------------------
+22/12/22 01:01:52 033 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:01:52 033 [debug] : ---------------------------------------
+22/12/22 01:01:55 986 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:01:55 988 [debug] : [GET] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 01:01:55 988 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:01:56 024 [debug] : [session] cookie=[object Object]
+22/12/22 01:01:56 026 [debug] : [session] username=세션테스트
+22/12/22 01:01:56 027 [debug] : [session] nickname=session test
+22/12/22 01:01:56 044 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 57ms
+22/12/22 01:01:56 045 [debug] : ---------------------------------------
+22/12/22 01:02:14 286 [debug] : ---------------------------------------
+22/12/22 01:02:14 292 [debug] : |         Start Express Server         |
+22/12/22 01:02:14 294 [debug] : ---------------------------------------
+22/12/22 01:02:14 295 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:02:14 302 [debug] : ---------------------------------------
+22/12/22 01:02:15 260 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:02:15 261 [debug] : [GET] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 01:02:15 262 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:02:15 293 [debug] : [session] cookie=[object Object]
+22/12/22 01:02:15 294 [debug] : [session] username=세션테스트
+22/12/22 01:02:15 294 [debug] : [session] nickname=session test
+22/12/22 01:02:15 307 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 46ms
+22/12/22 01:02:15 308 [debug] : ---------------------------------------
+22/12/22 01:02:31 944 [debug] : ---------------------------------------
+22/12/22 01:02:31 948 [debug] : |         Start Express Server         |
+22/12/22 01:02:31 949 [debug] : ---------------------------------------
+22/12/22 01:02:31 953 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:02:31 954 [debug] : ---------------------------------------
+22/12/22 01:02:35 435 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:02:35 436 [debug] : [GET] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 01:02:35 437 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:02:35 463 [debug] : [session] cookie=[object Object]
+22/12/22 01:02:35 463 [debug] : [session] username=세션테스트
+22/12/22 01:02:35 464 [debug] : [session] nickname=session test
+22/12/22 01:02:35 477 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 41ms
+22/12/22 01:02:35 480 [debug] : ---------------------------------------
+22/12/22 01:05:06 209 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:05:06 210 [debug] : [DELETE] http://192.168.0.14:3001/session?dname=테스트학과&loc=101
+22/12/22 01:05:06 211 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:05:06 218 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/12/22 01:05:06 218 [debug] : ---------------------------------------
+22/12/22 01:07:40 276 [debug] : ---------------------------------------
+22/12/22 01:07:40 280 [debug] : |         Start Express Server         |
+22/12/22 01:07:40 280 [debug] : ---------------------------------------
+22/12/22 01:07:40 282 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:07:40 284 [debug] : ---------------------------------------
+22/12/22 01:07:52 804 [debug] : ---------------------------------------
+22/12/22 01:07:52 807 [debug] : |         Start Express Server         |
+22/12/22 01:07:52 807 [debug] : ---------------------------------------
+22/12/22 01:07:52 808 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:07:52 808 [debug] : ---------------------------------------
+22/12/22 01:10:27 021 [debug] : ---------------------------------------
+22/12/22 01:10:27 025 [debug] : |         Start Express Server         |
+22/12/22 01:10:27 025 [debug] : ---------------------------------------
+22/12/22 01:10:27 026 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:10:27 027 [debug] : ---------------------------------------
+22/12/22 01:13:53 066 [debug] : ---------------------------------------
+22/12/22 01:13:53 069 [debug] : |         Start Express Server         |
+22/12/22 01:13:53 070 [debug] : ---------------------------------------
+22/12/22 01:13:53 071 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:13:53 071 [debug] : ---------------------------------------
+22/12/22 01:14:04 505 [debug] : ---------------------------------------
+22/12/22 01:14:04 508 [debug] : |         Start Express Server         |
+22/12/22 01:14:04 509 [debug] : ---------------------------------------
+22/12/22 01:14:04 509 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:14:04 510 [debug] : ---------------------------------------
+22/12/22 01:16:25 019 [debug] : ---------------------------------------
+22/12/22 01:16:25 023 [debug] : |         Start Express Server         |
+22/12/22 01:16:25 023 [debug] : ---------------------------------------
+22/12/22 01:16:25 024 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:16:25 024 [debug] : ---------------------------------------
+22/12/22 01:17:48 531 [debug] : ---------------------------------------
+22/12/22 01:17:48 535 [debug] : |         Start Express Server         |
+22/12/22 01:17:48 536 [debug] : ---------------------------------------
+22/12/22 01:17:48 536 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:17:48 537 [debug] : ---------------------------------------
+22/12/22 01:19:43 226 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:19:43 228 [debug] : [POST] http://192.168.0.14:3001/?dname=안녕&loc=101
+22/12/22 01:19:43 229 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:19:43 369 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/app.js:157:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+22/12/22 01:19:43 377 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 150ms
+22/12/22 01:19:43 377 [debug] : ---------------------------------------
+22/12/22 01:19:55 812 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:19:55 813 [debug] : [POST] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:19:55 814 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:19:55 823 [error] : BadRequestException: 학과 이름이 없습니다.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:77:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+22/12/22 01:19:55 825 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/12/22 01:19:55 825 [debug] : ---------------------------------------
+22/12/22 01:21:12 510 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:21:12 510 [debug] : [POST] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:21:12 511 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:21:12 515 [error] : BadRequestException: 학과 이름이 없습니다.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:77:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+22/12/22 01:21:12 521 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/12/22 01:21:12 521 [debug] : ---------------------------------------
+22/12/22 01:23:22 713 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:23:22 713 [debug] : [POST] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:23:22 713 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:23:22 837 [info] :  >> DATABASE 접속됨 [threadId=152]
+22/12/22 01:23:22 837 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:22 859 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (0)', '어디');
+22/12/22 01:23:22 893 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='319';
+22/12/22 01:23:22 930 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:22 934 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:22 945 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (1)', '어디');
+22/12/22 01:23:22 949 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='320';
+22/12/22 01:23:22 957 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:22 959 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:22 962 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (2)', '어디');
+22/12/22 01:23:22 973 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='321';
+22/12/22 01:23:22 977 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:22 978 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:22 980 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (3)', '어디');
+22/12/22 01:23:22 983 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='322';
+22/12/22 01:23:22 988 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:22 989 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:22 990 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (4)', '어디');
+22/12/22 01:23:22 993 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='323';
+22/12/22 01:23:22 995 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:22 995 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:22 997 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (5)', '어디');
+22/12/22 01:23:23 003 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='324';
+22/12/22 01:23:23 005 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 005 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 007 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (6)', '어디');
+22/12/22 01:23:23 009 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='325';
+22/12/22 01:23:23 010 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 011 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 013 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (7)', '어디');
+22/12/22 01:23:23 015 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='326';
+22/12/22 01:23:23 019 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 020 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 021 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (8)', '어디');
+22/12/22 01:23:23 025 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='327';
+22/12/22 01:23:23 027 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 029 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 033 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (9)', '어디');
+22/12/22 01:23:23 038 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='328';
+22/12/22 01:23:23 040 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 040 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 042 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (10)', '어디');
+22/12/22 01:23:23 044 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='329';
+22/12/22 01:23:23 045 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 046 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 047 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (11)', '어디');
+22/12/22 01:23:23 053 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='330';
+22/12/22 01:23:23 055 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 056 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 058 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (12)', '어디');
+22/12/22 01:23:23 059 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='331';
+22/12/22 01:23:23 061 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 061 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 063 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (13)', '어디');
+22/12/22 01:23:23 066 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='332';
+22/12/22 01:23:23 070 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 070 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 072 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (14)', '어디');
+22/12/22 01:23:23 074 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='333';
+22/12/22 01:23:23 076 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 076 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 078 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (15)', '어디');
+22/12/22 01:23:23 079 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='334';
+22/12/22 01:23:23 081 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 085 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 089 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (16)', '어디');
+22/12/22 01:23:23 090 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='335';
+22/12/22 01:23:23 092 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 092 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 093 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (17)', '어디');
+22/12/22 01:23:23 105 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='336';
+22/12/22 01:23:23 107 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 110 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 113 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (18)', '어디');
+22/12/22 01:23:23 140 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='337';
+22/12/22 01:23:23 142 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 142 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 144 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (19)', '어디');
+22/12/22 01:23:23 146 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='338';
+22/12/22 01:23:23 149 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 149 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 153 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (20)', '어디');
+22/12/22 01:23:23 156 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='339';
+22/12/22 01:23:23 158 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 159 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 173 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (21)', '어디');
+22/12/22 01:23:23 175 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='340';
+22/12/22 01:23:23 177 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 178 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 187 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (22)', '어디');
+22/12/22 01:23:23 191 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='341';
+22/12/22 01:23:23 196 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 197 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 199 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (23)', '어디');
+22/12/22 01:23:23 205 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='342';
+22/12/22 01:23:23 207 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 208 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 211 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (24)', '어디');
+22/12/22 01:23:23 229 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='343';
+22/12/22 01:23:23 238 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 238 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 241 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (25)', '어디');
+22/12/22 01:23:23 244 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='344';
+22/12/22 01:23:23 245 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 245 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 253 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (26)', '어디');
+22/12/22 01:23:23 345 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='345';
+22/12/22 01:23:23 347 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 347 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 351 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (27)', '어디');
+22/12/22 01:23:23 352 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='346';
+22/12/22 01:23:23 353 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 354 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 355 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (28)', '어디');
+22/12/22 01:23:23 358 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='347';
+22/12/22 01:23:23 359 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 360 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 361 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (29)', '어디');
+22/12/22 01:23:23 362 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='348';
+22/12/22 01:23:23 364 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 364 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 369 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (30)', '어디');
+22/12/22 01:23:23 372 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='349';
+22/12/22 01:23:23 373 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 373 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 374 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (31)', '어디');
+22/12/22 01:23:23 376 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='350';
+22/12/22 01:23:23 377 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 378 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 379 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (32)', '어디');
+22/12/22 01:23:23 386 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='351';
+22/12/22 01:23:23 388 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 389 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 390 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (33)', '어디');
+22/12/22 01:23:23 391 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='352';
+22/12/22 01:23:23 392 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 392 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 394 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (34)', '어디');
+22/12/22 01:23:23 395 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='353';
+22/12/22 01:23:23 398 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 403 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 406 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (35)', '어디');
+22/12/22 01:23:23 408 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='354';
+22/12/22 01:23:23 409 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 411 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 421 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (36)', '어디');
+22/12/22 01:23:23 423 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='355';
+22/12/22 01:23:23 424 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 424 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 425 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (37)', '어디');
+22/12/22 01:23:23 427 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='356';
+22/12/22 01:23:23 428 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 428 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 429 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (38)', '어디');
+22/12/22 01:23:23 431 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='357';
+22/12/22 01:23:23 433 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 436 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 436 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (39)', '어디');
+22/12/22 01:23:23 438 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='358';
+22/12/22 01:23:23 439 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 439 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 441 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (40)', '어디');
+22/12/22 01:23:23 443 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='359';
+22/12/22 01:23:23 444 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 445 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 446 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (41)', '어디');
+22/12/22 01:23:23 449 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='360';
+22/12/22 01:23:23 454 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 454 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 455 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (42)', '어디');
+22/12/22 01:23:23 457 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='361';
+22/12/22 01:23:23 458 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 458 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 459 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (43)', '어디');
+22/12/22 01:23:23 461 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='362';
+22/12/22 01:23:23 462 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 463 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 464 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (44)', '어디');
+22/12/22 01:23:23 469 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='363';
+22/12/22 01:23:23 491 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 491 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 496 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (45)', '어디');
+22/12/22 01:23:23 505 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='364';
+22/12/22 01:23:23 511 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 511 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 513 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (46)', '어디');
+22/12/22 01:23:23 523 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='365';
+22/12/22 01:23:23 525 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 525 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 527 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (47)', '어디');
+22/12/22 01:23:23 530 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='366';
+22/12/22 01:23:23 538 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 538 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 541 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (48)', '어디');
+22/12/22 01:23:23 544 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='367';
+22/12/22 01:23:23 559 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 559 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 562 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (49)', '어디');
+22/12/22 01:23:23 573 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='368';
+22/12/22 01:23:23 576 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 576 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 579 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (50)', '어디');
+22/12/22 01:23:23 589 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='369';
+22/12/22 01:23:23 592 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 592 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 596 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (51)', '어디');
+22/12/22 01:23:23 598 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='370';
+22/12/22 01:23:23 603 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 603 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 605 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (52)', '어디');
+22/12/22 01:23:23 607 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='371';
+22/12/22 01:23:23 608 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 608 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 610 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (53)', '어디');
+22/12/22 01:23:23 612 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='372';
+22/12/22 01:23:23 613 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 614 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 615 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (54)', '어디');
+22/12/22 01:23:23 619 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='373';
+22/12/22 01:23:23 620 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 621 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 622 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (55)', '어디');
+22/12/22 01:23:23 623 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='374';
+22/12/22 01:23:23 624 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 625 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 626 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (56)', '어디');
+22/12/22 01:23:23 628 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='375';
+22/12/22 01:23:23 629 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 629 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 630 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (57)', '어디');
+22/12/22 01:23:23 638 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='376';
+22/12/22 01:23:23 640 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 641 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 643 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (58)', '어디');
+22/12/22 01:23:23 646 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='377';
+22/12/22 01:23:23 651 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 651 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 656 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (59)', '어디');
+22/12/22 01:23:23 658 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='378';
+22/12/22 01:23:23 661 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 662 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 664 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (60)', '어디');
+22/12/22 01:23:23 666 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='379';
+22/12/22 01:23:23 669 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 669 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 670 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (61)', '어디');
+22/12/22 01:23:23 673 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='380';
+22/12/22 01:23:23 674 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 675 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 676 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (62)', '어디');
+22/12/22 01:23:23 689 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='381';
+22/12/22 01:23:23 691 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 692 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 698 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (63)', '어디');
+22/12/22 01:23:23 709 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='382';
+22/12/22 01:23:23 714 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 714 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 715 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (64)', '어디');
+22/12/22 01:23:23 722 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='383';
+22/12/22 01:23:23 723 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 724 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 727 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (65)', '어디');
+22/12/22 01:23:23 730 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='384';
+22/12/22 01:23:23 732 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 737 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 740 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (66)', '어디');
+22/12/22 01:23:23 744 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='385';
+22/12/22 01:23:23 746 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 746 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 753 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (67)', '어디');
+22/12/22 01:23:23 755 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='386';
+22/12/22 01:23:23 757 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 758 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 761 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (68)', '어디');
+22/12/22 01:23:23 763 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='387';
+22/12/22 01:23:23 765 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 768 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 771 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (69)', '어디');
+22/12/22 01:23:23 774 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='388';
+22/12/22 01:23:23 776 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 776 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 778 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (70)', '어디');
+22/12/22 01:23:23 781 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='389';
+22/12/22 01:23:23 786 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 787 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 795 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (71)', '어디');
+22/12/22 01:23:23 797 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='390';
+22/12/22 01:23:23 802 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 803 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 806 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (72)', '어디');
+22/12/22 01:23:23 809 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='391';
+22/12/22 01:23:23 811 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 812 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 814 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (73)', '어디');
+22/12/22 01:23:23 821 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='392';
+22/12/22 01:23:23 831 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 831 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 836 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (74)', '어디');
+22/12/22 01:23:23 838 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='393';
+22/12/22 01:23:23 840 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 840 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 843 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (75)', '어디');
+22/12/22 01:23:23 846 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='394';
+22/12/22 01:23:23 848 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 848 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 859 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (76)', '어디');
+22/12/22 01:23:23 864 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='395';
+22/12/22 01:23:23 872 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 872 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 875 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (77)', '어디');
+22/12/22 01:23:23 893 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='396';
+22/12/22 01:23:23 896 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 896 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 898 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (78)', '어디');
+22/12/22 01:23:23 907 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='397';
+22/12/22 01:23:23 911 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 911 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 925 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (79)', '어디');
+22/12/22 01:23:23 928 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='398';
+22/12/22 01:23:23 932 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 932 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 942 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (80)', '어디');
+22/12/22 01:23:23 945 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='399';
+22/12/22 01:23:23 948 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 961 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 963 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (81)', '어디');
+22/12/22 01:23:23 973 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='400';
+22/12/22 01:23:23 974 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 974 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 975 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (82)', '어디');
+22/12/22 01:23:23 977 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='401';
+22/12/22 01:23:23 978 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 979 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 980 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (83)', '어디');
+22/12/22 01:23:23 985 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='402';
+22/12/22 01:23:23 988 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 988 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 990 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (84)', '어디');
+22/12/22 01:23:23 991 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='403';
+22/12/22 01:23:23 992 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 992 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 994 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (85)', '어디');
+22/12/22 01:23:23 995 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='404';
+22/12/22 01:23:23 996 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:23 997 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:23 998 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (86)', '어디');
+22/12/22 01:23:24 002 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='405';
+22/12/22 01:23:24 004 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 005 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 005 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (87)', '어디');
+22/12/22 01:23:24 008 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='406';
+22/12/22 01:23:24 008 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 009 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 010 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (88)', '어디');
+22/12/22 01:23:24 012 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='407';
+22/12/22 01:23:24 014 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 014 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 019 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (89)', '어디');
+22/12/22 01:23:24 020 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='408';
+22/12/22 01:23:24 021 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 021 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 022 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (90)', '어디');
+22/12/22 01:23:24 023 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='409';
+22/12/22 01:23:24 025 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 025 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 026 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (91)', '어디');
+22/12/22 01:23:24 028 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='410';
+22/12/22 01:23:24 029 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 029 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 030 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (92)', '어디');
+22/12/22 01:23:24 035 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='411';
+22/12/22 01:23:24 036 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 036 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 037 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (93)', '어디');
+22/12/22 01:23:24 039 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='412';
+22/12/22 01:23:24 040 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 040 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 041 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (94)', '어디');
+22/12/22 01:23:24 043 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='413';
+22/12/22 01:23:24 044 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 046 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 047 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (95)', '어디');
+22/12/22 01:23:24 055 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='414';
+22/12/22 01:23:24 055 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 056 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 057 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (96)', '어디');
+22/12/22 01:23:24 059 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='415';
+22/12/22 01:23:24 059 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 060 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 062 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (97)', '어디');
+22/12/22 01:23:24 065 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='416';
+22/12/22 01:23:24 073 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 073 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 076 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (98)', '어디');
+22/12/22 01:23:24 078 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='417';
+22/12/22 01:23:24 081 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 083 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 086 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (99)', '어디');
+22/12/22 01:23:24 090 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='418';
+22/12/22 01:23:24 091 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 091 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 092 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (100)', '어디');
+22/12/22 01:23:24 096 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='419';
+22/12/22 01:23:24 097 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 098 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 109 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (101)', '어디');
+22/12/22 01:23:24 113 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='420';
+22/12/22 01:23:24 126 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 126 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 129 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (102)', '어디');
+22/12/22 01:23:24 131 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='421';
+22/12/22 01:23:24 142 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 144 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 146 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (103)', '어디');
+22/12/22 01:23:24 153 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='422';
+22/12/22 01:23:24 159 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 163 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 166 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (104)', '어디');
+22/12/22 01:23:24 172 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='423';
+22/12/22 01:23:24 175 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 175 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 177 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (105)', '어디');
+22/12/22 01:23:24 180 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='424';
+22/12/22 01:23:24 191 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 191 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 194 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (106)', '어디');
+22/12/22 01:23:24 197 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='425';
+22/12/22 01:23:24 205 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 206 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 211 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (107)', '어디');
+22/12/22 01:23:24 215 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='426';
+22/12/22 01:23:24 221 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 221 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 223 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (108)', '어디');
+22/12/22 01:23:24 226 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='427';
+22/12/22 01:23:24 227 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 228 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 229 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (109)', '어디');
+22/12/22 01:23:24 231 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='428';
+22/12/22 01:23:24 236 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 236 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 237 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (110)', '어디');
+22/12/22 01:23:24 238 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='429';
+22/12/22 01:23:24 239 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 239 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 241 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (111)', '어디');
+22/12/22 01:23:24 245 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='430';
+22/12/22 01:23:24 247 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 247 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 258 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (112)', '어디');
+22/12/22 01:23:24 261 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='431';
+22/12/22 01:23:24 263 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 264 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 264 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (113)', '어디');
+22/12/22 01:23:24 268 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='432';
+22/12/22 01:23:24 270 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 270 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 272 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (114)', '어디');
+22/12/22 01:23:24 274 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='433';
+22/12/22 01:23:24 275 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 275 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 278 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (115)', '어디');
+22/12/22 01:23:24 281 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='434';
+22/12/22 01:23:24 283 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 283 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 289 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (116)', '어디');
+22/12/22 01:23:24 291 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='435';
+22/12/22 01:23:24 293 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 294 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 295 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (117)', '어디');
+22/12/22 01:23:24 298 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='436';
+22/12/22 01:23:24 302 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 303 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 305 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (118)', '어디');
+22/12/22 01:23:24 306 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='437';
+22/12/22 01:23:24 307 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 308 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 309 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (119)', '어디');
+22/12/22 01:23:24 311 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='438';
+22/12/22 01:23:24 312 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 312 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 313 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (120)', '어디');
+22/12/22 01:23:24 315 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='439';
+22/12/22 01:23:24 319 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 319 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 322 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (121)', '어디');
+22/12/22 01:23:24 323 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='440';
+22/12/22 01:23:24 324 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 325 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 325 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (122)', '어디');
+22/12/22 01:23:24 328 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='441';
+22/12/22 01:23:24 329 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 329 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 330 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (123)', '어디');
+22/12/22 01:23:24 332 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='442';
+22/12/22 01:23:24 334 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 335 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 337 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (124)', '어디');
+22/12/22 01:23:24 339 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='443';
+22/12/22 01:23:24 339 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 340 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 341 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (125)', '어디');
+22/12/22 01:23:24 342 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='444';
+22/12/22 01:23:24 344 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 344 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 356 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (126)', '어디');
+22/12/22 01:23:24 358 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='445';
+22/12/22 01:23:24 359 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 362 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 365 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (127)', '어디');
+22/12/22 01:23:24 378 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='446';
+22/12/22 01:23:24 381 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 381 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 394 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (128)', '어디');
+22/12/22 01:23:24 397 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='447';
+22/12/22 01:23:24 402 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 405 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 413 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (129)', '어디');
+22/12/22 01:23:24 423 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='448';
+22/12/22 01:23:24 425 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 425 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 427 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (130)', '어디');
+22/12/22 01:23:24 442 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='449';
+22/12/22 01:23:24 444 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 444 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 454 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (131)', '어디');
+22/12/22 01:23:24 459 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='450';
+22/12/22 01:23:24 461 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 461 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 464 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (132)', '어디');
+22/12/22 01:23:24 472 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='451';
+22/12/22 01:23:24 474 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 474 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 476 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (133)', '어디');
+22/12/22 01:23:24 479 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='452';
+22/12/22 01:23:24 480 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 480 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 480 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (134)', '어디');
+22/12/22 01:23:24 488 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='453';
+22/12/22 01:23:24 489 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 490 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 491 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (135)', '어디');
+22/12/22 01:23:24 495 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='454';
+22/12/22 01:23:24 498 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 498 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 504 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (136)', '어디');
+22/12/22 01:23:24 506 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='455';
+22/12/22 01:23:24 506 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 507 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 508 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (137)', '어디');
+22/12/22 01:23:24 509 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='456';
+22/12/22 01:23:24 511 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 511 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 511 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (138)', '어디');
+22/12/22 01:23:24 513 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='457';
+22/12/22 01:23:24 514 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 514 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 519 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (139)', '어디');
+22/12/22 01:23:24 520 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='458';
+22/12/22 01:23:24 521 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 521 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 522 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (140)', '어디');
+22/12/22 01:23:24 523 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='459';
+22/12/22 01:23:24 524 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 524 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 525 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (141)', '어디');
+22/12/22 01:23:24 526 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='460';
+22/12/22 01:23:24 542 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 543 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 545 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (142)', '어디');
+22/12/22 01:23:24 547 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='461';
+22/12/22 01:23:24 547 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 548 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 551 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (143)', '어디');
+22/12/22 01:23:24 555 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='462';
+22/12/22 01:23:24 557 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 557 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 561 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (144)', '어디');
+22/12/22 01:23:24 563 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='463';
+22/12/22 01:23:24 564 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 564 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 566 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (145)', '어디');
+22/12/22 01:23:24 572 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='464';
+22/12/22 01:23:24 573 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 573 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 574 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (146)', '어디');
+22/12/22 01:23:24 576 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='465';
+22/12/22 01:23:24 578 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 578 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 579 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (147)', '어디');
+22/12/22 01:23:24 581 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='466';
+22/12/22 01:23:24 663 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 663 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 665 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (148)', '어디');
+22/12/22 01:23:24 672 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='467';
+22/12/22 01:23:24 674 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 674 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 675 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (149)', '어디');
+22/12/22 01:23:24 676 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='468';
+22/12/22 01:23:24 678 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 679 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 694 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (150)', '어디');
+22/12/22 01:23:24 696 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='469';
+22/12/22 01:23:24 696 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 697 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 698 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (151)', '어디');
+22/12/22 01:23:24 702 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='470';
+22/12/22 01:23:24 704 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 704 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 705 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (152)', '어디');
+22/12/22 01:23:24 740 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='471';
+22/12/22 01:23:24 742 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 742 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 745 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (153)', '어디');
+22/12/22 01:23:24 747 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='472';
+22/12/22 01:23:24 750 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 753 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 755 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (154)', '어디');
+22/12/22 01:23:24 757 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='473';
+22/12/22 01:23:24 758 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 758 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 762 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (155)', '어디');
+22/12/22 01:23:24 763 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='474';
+22/12/22 01:23:24 764 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 764 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 765 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (156)', '어디');
+22/12/22 01:23:24 774 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='475';
+22/12/22 01:23:24 776 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 776 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 778 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (157)', '어디');
+22/12/22 01:23:24 796 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='476';
+22/12/22 01:23:24 803 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 804 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 807 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (158)', '어디');
+22/12/22 01:23:24 808 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='477';
+22/12/22 01:23:24 809 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 809 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 811 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (159)', '어디');
+22/12/22 01:23:24 813 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='478';
+22/12/22 01:23:24 815 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 816 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 822 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (160)', '어디');
+22/12/22 01:23:24 824 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='479';
+22/12/22 01:23:24 825 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 825 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 829 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (161)', '어디');
+22/12/22 01:23:24 830 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='480';
+22/12/22 01:23:24 841 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 841 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 842 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (162)', '어디');
+22/12/22 01:23:24 844 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='481';
+22/12/22 01:23:24 844 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 845 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 846 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (163)', '어디');
+22/12/22 01:23:24 858 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='482';
+22/12/22 01:23:24 863 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 863 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 869 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (164)', '어디');
+22/12/22 01:23:24 872 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='483';
+22/12/22 01:23:24 874 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 874 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 877 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (165)', '어디');
+22/12/22 01:23:24 880 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='484';
+22/12/22 01:23:24 891 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 891 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 895 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (166)', '어디');
+22/12/22 01:23:24 898 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='485';
+22/12/22 01:23:24 903 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 903 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 906 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (167)', '어디');
+22/12/22 01:23:24 908 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='486';
+22/12/22 01:23:24 911 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 911 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 923 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (168)', '어디');
+22/12/22 01:23:24 926 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='487';
+22/12/22 01:23:24 929 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 929 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 939 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (169)', '어디');
+22/12/22 01:23:24 942 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='488';
+22/12/22 01:23:24 944 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 944 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 946 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (170)', '어디');
+22/12/22 01:23:24 956 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='489';
+22/12/22 01:23:24 961 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 962 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 963 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (171)', '어디');
+22/12/22 01:23:24 970 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='490';
+22/12/22 01:23:24 971 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 972 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 973 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (172)', '어디');
+22/12/22 01:23:24 974 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='491';
+22/12/22 01:23:24 976 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 977 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 978 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (173)', '어디');
+22/12/22 01:23:24 980 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='492';
+22/12/22 01:23:24 980 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 981 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 985 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (174)', '어디');
+22/12/22 01:23:24 988 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='493';
+22/12/22 01:23:24 989 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 989 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 990 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (175)', '어디');
+22/12/22 01:23:24 992 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='494';
+22/12/22 01:23:24 993 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 993 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 994 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (176)', '어디');
+22/12/22 01:23:24 996 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='495';
+22/12/22 01:23:24 997 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:24 997 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:24 999 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (177)', '어디');
+22/12/22 01:23:25 003 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='496';
+22/12/22 01:23:25 003 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 003 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 004 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (178)', '어디');
+22/12/22 01:23:25 006 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='497';
+22/12/22 01:23:25 006 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 007 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 008 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (179)', '어디');
+22/12/22 01:23:25 010 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='498';
+22/12/22 01:23:25 011 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 011 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 014 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (180)', '어디');
+22/12/22 01:23:25 020 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='499';
+22/12/22 01:23:25 023 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 023 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 023 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (181)', '어디');
+22/12/22 01:23:25 026 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='500';
+22/12/22 01:23:25 029 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 029 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 030 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (182)', '어디');
+22/12/22 01:23:25 033 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='501';
+22/12/22 01:23:25 036 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 036 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 037 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (183)', '어디');
+22/12/22 01:23:25 038 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='502';
+22/12/22 01:23:25 039 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 039 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 040 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (184)', '어디');
+22/12/22 01:23:25 042 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='503';
+22/12/22 01:23:25 042 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 043 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 044 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (185)', '어디');
+22/12/22 01:23:25 046 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='504';
+22/12/22 01:23:25 047 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 048 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 052 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (186)', '어디');
+22/12/22 01:23:25 053 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='505';
+22/12/22 01:23:25 054 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 054 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 055 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (187)', '어디');
+22/12/22 01:23:25 057 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='506';
+22/12/22 01:23:25 058 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 058 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 059 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (188)', '어디');
+22/12/22 01:23:25 061 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='507';
+22/12/22 01:23:25 062 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 063 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 064 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (189)', '어디');
+22/12/22 01:23:25 065 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='508';
+22/12/22 01:23:25 069 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 069 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 070 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (190)', '어디');
+22/12/22 01:23:25 072 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='509';
+22/12/22 01:23:25 073 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 073 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 074 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (191)', '어디');
+22/12/22 01:23:25 075 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='510';
+22/12/22 01:23:25 076 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 076 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 077 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (192)', '어디');
+22/12/22 01:23:25 079 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='511';
+22/12/22 01:23:25 080 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 080 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 082 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (193)', '어디');
+22/12/22 01:23:25 087 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='512';
+22/12/22 01:23:25 088 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 089 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 089 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (194)', '어디');
+22/12/22 01:23:25 091 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='513';
+22/12/22 01:23:25 091 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 092 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 095 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (195)', '어디');
+22/12/22 01:23:25 102 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='514';
+22/12/22 01:23:25 104 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 104 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 106 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (196)', '어디');
+22/12/22 01:23:25 120 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='515';
+22/12/22 01:23:25 122 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 122 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 124 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (197)', '어디');
+22/12/22 01:23:25 125 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='516';
+22/12/22 01:23:25 126 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 127 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 128 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (198)', '어디');
+22/12/22 01:23:25 130 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='517';
+22/12/22 01:23:25 130 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 130 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 135 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (199)', '어디');
+22/12/22 01:23:25 136 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='518';
+22/12/22 01:23:25 137 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 137 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 139 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (200)', '어디');
+22/12/22 01:23:25 142 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='519';
+22/12/22 01:23:25 144 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 144 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 146 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (201)', '어디');
+22/12/22 01:23:25 146 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='520';
+22/12/22 01:23:25 148 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 149 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 152 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (202)', '어디');
+22/12/22 01:23:25 153 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='521';
+22/12/22 01:23:25 154 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 154 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 155 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (203)', '어디');
+22/12/22 01:23:25 156 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='522';
+22/12/22 01:23:25 158 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 158 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 159 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (204)', '어디');
+22/12/22 01:23:25 160 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='523';
+22/12/22 01:23:25 161 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 162 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 165 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (205)', '어디');
+22/12/22 01:23:25 171 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='524';
+22/12/22 01:23:25 172 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 172 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 173 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (206)', '어디');
+22/12/22 01:23:25 175 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='525';
+22/12/22 01:23:25 176 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 176 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 178 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (207)', '어디');
+22/12/22 01:23:25 180 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='526';
+22/12/22 01:23:25 181 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 181 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 183 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (208)', '어디');
+22/12/22 01:23:25 189 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='527';
+22/12/22 01:23:25 190 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 190 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 191 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (209)', '어디');
+22/12/22 01:23:25 193 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='528';
+22/12/22 01:23:25 194 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 195 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 196 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (210)', '어디');
+22/12/22 01:23:25 198 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='529';
+22/12/22 01:23:25 202 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 202 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 204 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (211)', '어디');
+22/12/22 01:23:25 205 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='530';
+22/12/22 01:23:25 206 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 206 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 206 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (212)', '어디');
+22/12/22 01:23:25 208 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='531';
+22/12/22 01:23:25 209 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 209 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 212 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (213)', '어디');
+22/12/22 01:23:25 213 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='532';
+22/12/22 01:23:25 214 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 216 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 219 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (214)', '어디');
+22/12/22 01:23:25 222 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='533';
+22/12/22 01:23:25 224 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 224 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 236 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (215)', '어디');
+22/12/22 01:23:25 241 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='534';
+22/12/22 01:23:25 244 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 244 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 246 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (216)', '어디');
+22/12/22 01:23:25 253 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='535';
+22/12/22 01:23:25 255 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 256 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 258 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (217)', '어디');
+22/12/22 01:23:25 267 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='536';
+22/12/22 01:23:25 270 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 270 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 273 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (218)', '어디');
+22/12/22 01:23:25 276 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='537';
+22/12/22 01:23:25 277 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 278 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 280 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (219)', '어디');
+22/12/22 01:23:25 294 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='538';
+22/12/22 01:23:25 295 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 296 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 300 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (220)', '어디');
+22/12/22 01:23:25 305 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='539';
+22/12/22 01:23:25 307 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 307 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 309 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (221)', '어디');
+22/12/22 01:23:25 321 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='540';
+22/12/22 01:23:25 322 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 323 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 324 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (222)', '어디');
+22/12/22 01:23:25 328 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='541';
+22/12/22 01:23:25 339 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 339 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 343 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (223)', '어디');
+22/12/22 01:23:25 346 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='542';
+22/12/22 01:23:25 346 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 347 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 348 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (224)', '어디');
+22/12/22 01:23:25 352 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='543';
+22/12/22 01:23:25 353 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 353 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 354 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (225)', '어디');
+22/12/22 01:23:25 355 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='544';
+22/12/22 01:23:25 356 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 356 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 357 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (226)', '어디');
+22/12/22 01:23:25 359 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='545';
+22/12/22 01:23:25 361 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 361 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 362 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (227)', '어디');
+22/12/22 01:23:25 366 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='546';
+22/12/22 01:23:25 372 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 372 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 374 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (228)', '어디');
+22/12/22 01:23:25 375 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='547';
+22/12/22 01:23:25 376 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 377 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 378 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (229)', '어디');
+22/12/22 01:23:25 380 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='548';
+22/12/22 01:23:25 380 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 381 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 388 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (230)', '어디');
+22/12/22 01:23:25 391 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='549';
+22/12/22 01:23:25 392 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 394 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 395 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (231)', '어디');
+22/12/22 01:23:25 396 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='550';
+22/12/22 01:23:25 397 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 397 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 399 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (232)', '어디');
+22/12/22 01:23:25 402 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='551';
+22/12/22 01:23:25 403 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 404 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 405 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (233)', '어디');
+22/12/22 01:23:25 406 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='552';
+22/12/22 01:23:25 409 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 409 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 412 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (234)', '어디');
+22/12/22 01:23:25 414 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='553';
+22/12/22 01:23:25 428 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 428 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 444 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (235)', '어디');
+22/12/22 01:23:25 446 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='554';
+22/12/22 01:23:25 447 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 448 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 453 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (236)', '어디');
+22/12/22 01:23:25 454 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='555';
+22/12/22 01:23:25 455 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 456 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 457 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (237)', '어디');
+22/12/22 01:23:25 458 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='556';
+22/12/22 01:23:25 459 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 459 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 460 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (238)', '어디');
+22/12/22 01:23:25 462 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='557';
+22/12/22 01:23:25 469 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 469 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 472 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (239)', '어디');
+22/12/22 01:23:25 480 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='558';
+22/12/22 01:23:25 488 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 488 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 490 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (240)', '어디');
+22/12/22 01:23:25 505 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='559';
+22/12/22 01:23:25 507 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 507 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 509 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (241)', '어디');
+22/12/22 01:23:25 511 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='560';
+22/12/22 01:23:25 514 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 514 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 518 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (242)', '어디');
+22/12/22 01:23:25 521 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='561';
+22/12/22 01:23:25 522 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 522 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 523 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (243)', '어디');
+22/12/22 01:23:25 524 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='562';
+22/12/22 01:23:25 525 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 525 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 527 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (244)', '어디');
+22/12/22 01:23:25 528 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='563';
+22/12/22 01:23:25 529 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 529 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 530 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (245)', '어디');
+22/12/22 01:23:25 535 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='564';
+22/12/22 01:23:25 535 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 536 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 537 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (246)', '어디');
+22/12/22 01:23:25 538 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='565';
+22/12/22 01:23:25 539 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 539 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 540 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (247)', '어디');
+22/12/22 01:23:25 541 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='566';
+22/12/22 01:23:25 542 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 542 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 544 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (248)', '어디');
+22/12/22 01:23:25 545 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='567';
+22/12/22 01:23:25 546 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 546 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 552 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (249)', '어디');
+22/12/22 01:23:25 553 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='568';
+22/12/22 01:23:25 554 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 554 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 555 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (250)', '어디');
+22/12/22 01:23:25 556 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='569';
+22/12/22 01:23:25 557 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 557 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 558 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (251)', '어디');
+22/12/22 01:23:25 561 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='570';
+22/12/22 01:23:25 562 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 563 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 563 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (252)', '어디');
+22/12/22 01:23:25 565 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='571';
+22/12/22 01:23:25 568 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 568 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 570 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (253)', '어디');
+22/12/22 01:23:25 571 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='572';
+22/12/22 01:23:25 572 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 572 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 573 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (254)', '어디');
+22/12/22 01:23:25 575 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='573';
+22/12/22 01:23:25 575 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 575 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 581 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (255)', '어디');
+22/12/22 01:23:25 585 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='574';
+22/12/22 01:23:25 587 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 587 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 588 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (256)', '어디');
+22/12/22 01:23:25 589 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='575';
+22/12/22 01:23:25 590 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 590 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 591 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (257)', '어디');
+22/12/22 01:23:25 592 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='576';
+22/12/22 01:23:25 594 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 594 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 595 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (258)', '어디');
+22/12/22 01:23:25 597 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='577';
+22/12/22 01:23:25 602 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 602 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 603 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (259)', '어디');
+22/12/22 01:23:25 605 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='578';
+22/12/22 01:23:25 607 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 607 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 609 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (260)', '어디');
+22/12/22 01:23:25 611 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='579';
+22/12/22 01:23:25 612 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 612 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 614 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (261)', '어디');
+22/12/22 01:23:25 621 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='580';
+22/12/22 01:23:25 622 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 622 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 623 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (262)', '어디');
+22/12/22 01:23:25 625 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='581';
+22/12/22 01:23:25 625 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 626 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 627 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (263)', '어디');
+22/12/22 01:23:25 628 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='582';
+22/12/22 01:23:25 629 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 629 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 630 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (264)', '어디');
+22/12/22 01:23:25 633 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='583';
+22/12/22 01:23:25 635 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 636 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 636 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (265)', '어디');
+22/12/22 01:23:25 637 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='584';
+22/12/22 01:23:25 638 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 638 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 639 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (266)', '어디');
+22/12/22 01:23:25 641 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='585';
+22/12/22 01:23:25 641 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 641 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 642 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (267)', '어디');
+22/12/22 01:23:25 644 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='586';
+22/12/22 01:23:25 645 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 646 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 646 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (268)', '어디');
+22/12/22 01:23:25 648 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='587';
+22/12/22 01:23:25 651 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 651 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 652 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (269)', '어디');
+22/12/22 01:23:25 654 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='588';
+22/12/22 01:23:25 654 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 655 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 655 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (270)', '어디');
+22/12/22 01:23:25 657 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='589';
+22/12/22 01:23:25 658 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 659 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 660 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (271)', '어디');
+22/12/22 01:23:25 661 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='590';
+22/12/22 01:23:25 662 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 662 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 663 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (272)', '어디');
+22/12/22 01:23:25 664 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='591';
+22/12/22 01:23:25 666 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 667 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 667 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (273)', '어디');
+22/12/22 01:23:25 673 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='592';
+22/12/22 01:23:25 674 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 674 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 675 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (274)', '어디');
+22/12/22 01:23:25 677 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='593';
+22/12/22 01:23:25 677 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 678 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 679 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (275)', '어디');
+22/12/22 01:23:25 680 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='594';
+22/12/22 01:23:25 681 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 682 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 686 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (276)', '어디');
+22/12/22 01:23:25 688 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='595';
+22/12/22 01:23:25 688 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 689 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 690 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (277)', '어디');
+22/12/22 01:23:25 691 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='596';
+22/12/22 01:23:25 691 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 692 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 693 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (278)', '어디');
+22/12/22 01:23:25 694 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='597';
+22/12/22 01:23:25 696 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 696 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 703 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (279)', '어디');
+22/12/22 01:23:25 704 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='598';
+22/12/22 01:23:25 705 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 705 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 706 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (280)', '어디');
+22/12/22 01:23:25 707 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='599';
+22/12/22 01:23:25 708 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 708 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 709 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (281)', '어디');
+22/12/22 01:23:25 710 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='600';
+22/12/22 01:23:25 711 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 712 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 712 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (282)', '어디');
+22/12/22 01:23:25 713 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='601';
+22/12/22 01:23:25 715 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 715 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 719 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (283)', '어디');
+22/12/22 01:23:25 721 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='602';
+22/12/22 01:23:25 723 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 723 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 725 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (284)', '어디');
+22/12/22 01:23:25 728 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='603';
+22/12/22 01:23:25 730 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 730 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 734 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (285)', '어디');
+22/12/22 01:23:25 746 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='604';
+22/12/22 01:23:25 754 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 756 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 758 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (286)', '어디');
+22/12/22 01:23:25 761 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='605';
+22/12/22 01:23:25 763 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 763 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 768 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (287)', '어디');
+22/12/22 01:23:25 802 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='606';
+22/12/22 01:23:25 806 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 806 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 809 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (288)', '어디');
+22/12/22 01:23:25 811 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='607';
+22/12/22 01:23:25 820 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 822 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 824 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (289)', '어디');
+22/12/22 01:23:25 826 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='608';
+22/12/22 01:23:25 827 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 827 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 829 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (290)', '어디');
+22/12/22 01:23:25 830 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='609';
+22/12/22 01:23:25 830 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 831 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 834 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (291)', '어디');
+22/12/22 01:23:25 836 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='610';
+22/12/22 01:23:25 837 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 838 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 840 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (292)', '어디');
+22/12/22 01:23:25 841 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='611';
+22/12/22 01:23:25 842 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 842 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 842 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (293)', '어디');
+22/12/22 01:23:25 844 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='612';
+22/12/22 01:23:25 845 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 845 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 846 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (294)', '어디');
+22/12/22 01:23:25 847 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='613';
+22/12/22 01:23:25 852 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 852 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 853 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (295)', '어디');
+22/12/22 01:23:25 854 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='614';
+22/12/22 01:23:25 855 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 856 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 856 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (296)', '어디');
+22/12/22 01:23:25 859 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='615';
+22/12/22 01:23:25 859 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 860 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 861 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (297)', '어디');
+22/12/22 01:23:25 863 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='616';
+22/12/22 01:23:25 863 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 864 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 868 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (298)', '어디');
+22/12/22 01:23:25 869 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='617';
+22/12/22 01:23:25 870 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 871 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:25 872 [debug] : INSERT INTO department (dname, loc) VALUES ('안녕 (299)', '어디');
+22/12/22 01:23:25 873 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='618';
+22/12/22 01:23:25 874 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:25 878 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3165ms
+22/12/22 01:23:25 878 [debug] : ---------------------------------------
+22/12/22 01:23:37 641 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:23:37 641 [debug] : [GET] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:23:37 641 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:23:37 651 [info] :  >> Connection 임대됨 [threadId=152]
+22/12/22 01:23:37 653 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:23:37 663 [info] :  >> Connection 반납됨 [threadId=152]
+22/12/22 01:23:37 664 [error] : ReferenceError: rows is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:29:53
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+22/12/22 01:23:37 665 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
+22/12/22 01:23:37 665 [debug] : ---------------------------------------
+22/12/22 01:25:47 048 [debug] : ---------------------------------------
+22/12/22 01:25:47 052 [debug] : |         Start Express Server         |
+22/12/22 01:25:47 052 [debug] : ---------------------------------------
+22/12/22 01:25:47 053 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:25:47 053 [debug] : ---------------------------------------
+22/12/22 01:25:52 466 [debug] : ---------------------------------------
+22/12/22 01:25:52 469 [debug] : |         Start Express Server         |
+22/12/22 01:25:52 470 [debug] : ---------------------------------------
+22/12/22 01:25:52 471 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:25:52 474 [debug] : ---------------------------------------
+22/12/22 01:26:05 755 [debug] : ---------------------------------------
+22/12/22 01:26:05 758 [debug] : |         Start Express Server         |
+22/12/22 01:26:05 759 [debug] : ---------------------------------------
+22/12/22 01:26:05 759 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:26:05 760 [debug] : ---------------------------------------
+22/12/22 01:26:35 796 [debug] : ---------------------------------------
+22/12/22 01:26:35 800 [debug] : |         Start Express Server         |
+22/12/22 01:26:35 801 [debug] : ---------------------------------------
+22/12/22 01:26:35 801 [debug] : server address => http://192.168.0.14:3001
+22/12/22 01:26:35 802 [debug] : ---------------------------------------
+22/12/22 01:26:47 703 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:26:47 707 [debug] : [GET] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:26:47 713 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:26:47 794 [info] :  >> DATABASE 접속됨 [threadId=157]
+22/12/22 01:26:47 795 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:26:47 800 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:26:47 818 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:26:47 826 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:26:47 831 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 0, 5
+22/12/22 01:26:47 844 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:26:47 867 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 162ms
+22/12/22 01:26:47 867 [debug] : ---------------------------------------
+22/12/22 01:27:24 606 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:27:24 607 [debug] : [GET] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:27:24 607 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:27:24 612 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:24 614 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:27:24 625 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:24 626 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:24 627 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 0, 5
+22/12/22 01:27:24 630 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:24 632 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+22/12/22 01:27:24 633 [debug] : ---------------------------------------
+22/12/22 01:27:32 847 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:27:32 847 [debug] : [GET] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:27:32 847 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:27:32 852 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:32 853 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:27:32 858 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:32 859 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:32 860 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 0, 5
+22/12/22 01:27:32 861 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:32 863 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+22/12/22 01:27:32 864 [debug] : ---------------------------------------
+22/12/22 01:27:39 100 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:27:39 101 [debug] : [GET] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:27:39 101 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:27:39 106 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:39 106 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:27:39 114 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:39 114 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:39 115 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 0, 5
+22/12/22 01:27:39 117 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:39 118 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/12/22 01:27:39 118 [debug] : ---------------------------------------
+22/12/22 01:27:53 047 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:27:53 048 [debug] : [GET] http://192.168.0.14:3001/department?dname=안녕&loc=101
+22/12/22 01:27:53 048 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:27:53 052 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:53 053 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:27:53 059 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:53 060 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:27:53 062 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 0, 5
+22/12/22 01:27:53 064 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:27:53 065 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/12/22 01:27:53 065 [debug] : ---------------------------------------
+22/12/22 01:28:51 101 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:28:51 102 [debug] : [GET] http://192.168.0.14:3001/department?page=2
+22/12/22 01:28:51 102 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:28:51 108 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:28:51 109 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:28:51 118 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:28:51 119 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:28:51 121 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 5, 5
+22/12/22 01:28:51 124 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:28:51 125 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
+22/12/22 01:28:51 126 [debug] : ---------------------------------------
+22/12/22 01:28:59 164 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:28:59 165 [debug] : [GET] http://192.168.0.14:3001/department?page=50
+22/12/22 01:28:59 165 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:28:59 169 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:28:59 170 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:28:59 180 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:28:59 181 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:28:59 182 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 245, 5
+22/12/22 01:28:59 184 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:28:59 186 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+22/12/22 01:28:59 186 [debug] : ---------------------------------------
+22/12/22 01:29:07 726 [debug] : 클라이언트가 접속했습니다.
+22/12/22 01:29:07 727 [debug] : [GET] http://192.168.0.14:3001/department?page=100
+22/12/22 01:29:07 727 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.7.0 / unknown
+22/12/22 01:29:07 733 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:29:07 735 [debug] : SELECT COUNT(*) AS cnt FROM department
+22/12/22 01:29:07 750 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:29:07 750 [info] :  >> Connection 임대됨 [threadId=157]
+22/12/22 01:29:07 751 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC  LIMIT 495, 5
+22/12/22 01:29:07 756 [info] :  >> Connection 반납됨 [threadId=157]
+22/12/22 01:29:07 756 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at DepartmentServcie.getList (/Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/service/DepartmentService.js:29:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:33:14
+22/12/22 01:29:07 757 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+22/12/22 01:29:07 758 [debug] : ---------------------------------------

@@ -1,0 +1,275 @@
+22/12/21 02:04:39 608 [debug] : ---------------------------------------
+22/12/21 02:04:39 610 [debug] : |         Start Express Server         |
+22/12/21 02:04:39 611 [debug] : ---------------------------------------
+22/12/21 02:04:39 611 [debug] : server address => http://192.168.0.14:3001
+22/12/21 02:04:39 612 [debug] : ---------------------------------------
+22/12/21 02:04:52 472 [debug] : 클라이언트가 접속했습니다.
+22/12/21 02:04:52 475 [debug] : [GET] http://localhost:3001/
+22/12/21 02:04:52 476 [debug] : [client] ::1 / OS X / Chrome 108.0.0.0 / Apple Mac
+22/12/21 02:04:52 519 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/app.js:124:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+22/12/21 02:04:52 547 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 73ms
+22/12/21 02:04:52 549 [debug] : ---------------------------------------
+22/12/21 10:46:01 586 [debug] : ---------------------------------------
+22/12/21 10:46:01 590 [debug] : |         Start Express Server         |
+22/12/21 10:46:01 590 [debug] : ---------------------------------------
+22/12/21 10:46:01 591 [debug] : server address => http://192.168.0.14:3001
+22/12/21 10:46:01 592 [debug] : ---------------------------------------
+22/12/21 10:47:38 525 [debug] : 클라이언트가 접속했습니다.
+22/12/21 10:47:38 535 [debug] : [GET] http://192.168.0.14:3001/departmnet
+22/12/21 10:47:38 536 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 10:47:38 718 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/app.js:126:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+22/12/21 10:47:38 757 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 229ms
+22/12/21 10:47:38 788 [debug] : ---------------------------------------
+22/12/21 10:47:47 952 [debug] : 클라이언트가 접속했습니다.
+22/12/21 10:47:47 955 [debug] : [GET] http://192.168.0.14:3001/department
+22/12/21 10:47:47 956 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 10:47:48 466 [info] :  >> DATABASE 접속됨 [threadId=112]
+22/12/21 10:47:48 467 [info] :  >> Connection 임대됨 [threadId=112]
+22/12/21 10:47:48 475 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC
+22/12/21 10:47:48 840 [info] :  >> Connection 반납됨 [threadId=112]
+22/12/21 10:47:48 850 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 896ms
+22/12/21 10:47:48 852 [debug] : ---------------------------------------
+22/12/21 10:49:12 474 [debug] : 클라이언트가 접속했습니다.
+22/12/21 10:49:12 475 [debug] : [GET] http://192.168.0.14:3001/department
+22/12/21 10:49:12 475 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 10:49:12 478 [info] :  >> Connection 임대됨 [threadId=112]
+22/12/21 10:49:12 485 [debug] : SELECT deptno, dname, loc FROM department  ORDER BY deptno DESC
+22/12/21 10:49:12 498 [info] :  >> Connection 반납됨 [threadId=112]
+22/12/21 10:49:12 499 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+22/12/21 10:49:12 500 [debug] : ---------------------------------------
+22/12/21 10:49:22 696 [debug] : 클라이언트가 접속했습니다.
+22/12/21 10:49:22 696 [debug] : [GET] http://192.168.0.14:3001/department?query=수정학과
+22/12/21 10:49:22 697 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 10:49:22 702 [info] :  >> Connection 임대됨 [threadId=112]
+22/12/21 10:49:22 705 [debug] : SELECT deptno, dname, loc FROM department  WHERE  dname LIKE concat('%', '수정학과', '%')  OR loc LIKE concat('%', '수정학과', '%')  ORDER BY deptno DESC
+22/12/21 10:49:22 751 [info] :  >> Connection 반납됨 [threadId=112]
+22/12/21 10:49:22 753 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 57ms
+22/12/21 10:49:22 754 [debug] : ---------------------------------------
+22/12/21 11:06:47 163 [debug] : ---------------------------------------
+22/12/21 11:06:47 169 [debug] : |         Start Express Server         |
+22/12/21 11:06:47 170 [debug] : ---------------------------------------
+22/12/21 11:06:47 173 [debug] : server address => http://192.168.0.14:3001
+22/12/21 11:06:47 174 [debug] : ---------------------------------------
+22/12/21 11:09:00 713 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:09:00 718 [debug] : [GET] http://192.168.0.14:3001/department/수정학과
+22/12/21 11:09:00 719 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:09:00 821 [error] : BadRequestException: 학과번호가 잘못되었습니다.
+    at RegexHelper.field (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:84:19)
+    at RegexHelper.num (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:96:21)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:43:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+22/12/21 11:09:00 854 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 139ms
+22/12/21 11:09:00 856 [debug] : ---------------------------------------
+22/12/21 11:09:07 591 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:09:07 592 [debug] : [GET] http://192.168.0.14:3001/department/101
+22/12/21 11:09:07 592 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:09:07 674 [info] :  >> DATABASE 접속됨 [threadId=113]
+22/12/21 11:09:07 675 [info] :  >> Connection 임대됨 [threadId=113]
+22/12/21 11:09:07 679 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='101';
+22/12/21 11:09:07 722 [info] :  >> Connection 반납됨 [threadId=113]
+22/12/21 11:09:07 724 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at DepartmentServcie.getItem (/Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/service/DepartmentService.js:55:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:52:20
+22/12/21 11:09:07 727 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 135ms
+22/12/21 11:09:07 728 [debug] : ---------------------------------------
+22/12/21 11:09:10 468 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:09:10 469 [debug] : [GET] http://192.168.0.14:3001/department/102
+22/12/21 11:09:10 470 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:09:10 473 [info] :  >> Connection 임대됨 [threadId=113]
+22/12/21 11:09:10 475 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='102';
+22/12/21 11:09:10 503 [info] :  >> Connection 반납됨 [threadId=113]
+22/12/21 11:09:10 507 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 38ms
+22/12/21 11:09:10 508 [debug] : ---------------------------------------
+22/12/21 11:12:58 461 [debug] : ---------------------------------------
+22/12/21 11:12:58 464 [debug] : |         Start Express Server         |
+22/12/21 11:12:58 465 [debug] : ---------------------------------------
+22/12/21 11:12:58 465 [debug] : server address => http://192.168.0.14:3001
+22/12/21 11:12:58 466 [debug] : ---------------------------------------
+22/12/21 11:13:36 450 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:13:36 453 [debug] : [POST] http://192.168.0.14:3001/department/102?dname=테스트학과&loc=101
+22/12/21 11:13:36 459 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:13:36 521 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/app.js:126:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+22/12/21 11:13:36 623 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 172ms
+22/12/21 11:13:36 630 [debug] : ---------------------------------------
+22/12/21 11:13:43 306 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:13:43 307 [debug] : [POST] http://192.168.0.14:3001/department?dname=테스트학과&loc=101
+22/12/21 11:13:43 307 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:13:43 311 [error] : BadRequestException: 학과 이름이 없습니다.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:70:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+22/12/21 11:13:43 312 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/12/21 11:13:43 313 [debug] : ---------------------------------------
+22/12/21 11:14:38 376 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:14:38 377 [debug] : [POST] http://192.168.0.14:3001/department?dname=테스트학과&loc=101
+22/12/21 11:14:38 377 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:14:38 421 [info] :  >> DATABASE 접속됨 [threadId=114]
+22/12/21 11:14:38 421 [info] :  >> Connection 임대됨 [threadId=114]
+22/12/21 11:14:38 426 [debug] : INSERT INTO department (dname, loc) VALUES ('테스트학과', '테스트');
+22/12/21 11:14:38 552 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='318';
+22/12/21 11:14:38 557 [info] :  >> Connection 반납됨 [threadId=114]
+22/12/21 11:14:38 561 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 184ms
+22/12/21 11:14:38 561 [debug] : ---------------------------------------
+22/12/21 11:25:17 682 [debug] : ---------------------------------------
+22/12/21 11:25:17 686 [debug] : |         Start Express Server         |
+22/12/21 11:25:17 687 [debug] : ---------------------------------------
+22/12/21 11:25:17 688 [debug] : server address => http://192.168.0.14:3001
+22/12/21 11:25:17 688 [debug] : ---------------------------------------
+22/12/21 11:26:08 618 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:26:08 620 [debug] : [PUT] http://192.168.0.14:3001/department/101?dname=테스트학과&loc=101
+22/12/21 11:26:08 621 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:26:08 739 [info] :  >> DATABASE 접속됨 [threadId=115]
+22/12/21 11:26:08 740 [info] :  >> Connection 임대됨 [threadId=115]
+22/12/21 11:26:08 745 [debug] : UPDATE department SET dname='수정학과', loc='수정테스트'  WHERE deptno='101';
+22/12/21 11:26:08 772 [info] :  >> Connection 반납됨 [threadId=115]
+22/12/21 11:26:08 778 [error] : RuntimeException: 저장된 데이터가 없습니다.
+    at DepartmentServcie.editItem (/Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/service/DepartmentService.js:115:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:113:20
+22/12/21 11:26:08 871 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 253ms
+22/12/21 11:26:08 874 [debug] : ---------------------------------------
+22/12/21 11:27:58 521 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:27:58 522 [debug] : [PUT] http://192.168.0.14:3001/department/318?dname=테스트학과&loc=101
+22/12/21 11:27:58 522 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:27:58 524 [info] :  >> Connection 임대됨 [threadId=115]
+22/12/21 11:27:58 526 [debug] : UPDATE department SET dname='수정학과', loc='수정테스트'  WHERE deptno='318';
+22/12/21 11:27:58 546 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='318';
+22/12/21 11:27:58 552 [info] :  >> Connection 반납됨 [threadId=115]
+22/12/21 11:27:58 553 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+22/12/21 11:27:58 554 [debug] : ---------------------------------------
+22/12/21 11:32:17 410 [debug] : ---------------------------------------
+22/12/21 11:32:17 416 [debug] : |         Start Express Server         |
+22/12/21 11:32:17 417 [debug] : ---------------------------------------
+22/12/21 11:32:17 417 [debug] : server address => http://192.168.0.14:3001
+22/12/21 11:32:17 418 [debug] : ---------------------------------------
+22/12/21 11:32:23 507 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:32:23 520 [debug] : [DELETE] http://192.168.0.14:3001/department/318?dname=테스트학과&loc=101
+22/12/21 11:32:23 522 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:32:23 589 [error] : ReferenceError: devicePixelRatio is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:140:13
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+22/12/21 11:32:23 606 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 98ms
+22/12/21 11:32:23 607 [debug] : ---------------------------------------
+22/12/21 11:33:32 429 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:33:32 431 [debug] : [DELETE] http://192.168.0.14:3001/department/318?dname=테스트학과&loc=101
+22/12/21 11:33:32 432 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:33:32 435 [error] : ReferenceError: devicePixelRatio is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:140:13
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+22/12/21 11:33:32 440 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/12/21 11:33:32 440 [debug] : ---------------------------------------
+22/12/21 11:35:32 369 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:35:32 370 [debug] : [DELETE] http://192.168.0.14:3001/department/318?dname=테스트학과&loc=101
+22/12/21 11:35:32 370 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:35:32 374 [error] : ReferenceError: devicePixelRatio is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:140:13
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+22/12/21 11:35:32 376 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/12/21 11:35:32 377 [debug] : ---------------------------------------
+22/12/21 11:35:32 458 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:35:32 458 [debug] : [DELETE] http://192.168.0.14:3001/department/318?dname=테스트학과&loc=101
+22/12/21 11:35:32 461 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:35:32 470 [error] : ReferenceError: devicePixelRatio is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/13-RestfulAPI/controllers/DepartmentController.js:140:13
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+22/12/21 11:35:32 484 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+22/12/21 11:35:32 490 [debug] : ---------------------------------------
+22/12/21 11:35:45 756 [debug] : ---------------------------------------
+22/12/21 11:35:45 762 [debug] : |         Start Express Server         |
+22/12/21 11:35:45 763 [debug] : ---------------------------------------
+22/12/21 11:35:45 764 [debug] : server address => http://192.168.0.14:3001
+22/12/21 11:35:45 765 [debug] : ---------------------------------------
+22/12/21 11:35:51 520 [debug] : 클라이언트가 접속했습니다.
+22/12/21 11:35:51 575 [debug] : [DELETE] http://192.168.0.14:3001/department/318?dname=테스트학과&loc=101
+22/12/21 11:35:51 593 [debug] : [client] ::ffff:192.168.0.14 / unknown / insomnia 2022.6.0 / unknown
+22/12/21 11:35:52 031 [info] :  >> DATABASE 접속됨 [threadId=116]
+22/12/21 11:35:52 043 [info] :  >> Connection 임대됨 [threadId=116]
+22/12/21 11:35:52 095 [debug] : DELETE FROM student WHERE deptno='318';
+22/12/21 11:35:52 211 [debug] : DELETE FROM professor WHERE deptno='318';
+22/12/21 11:35:52 273 [debug] : DELETE FROM department WHERE deptno='318'
+22/12/21 11:35:52 290 [info] :  >> Connection 반납됨 [threadId=116]
+22/12/21 11:35:52 390 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 864ms
+22/12/21 11:35:52 410 [debug] : ---------------------------------------
+22/12/21 11:36:26 165 [debug] : 백엔드가 종료되었습니다.
+22/12/21 11:58:42 019 [debug] : ---------------------------------------
+22/12/21 11:58:42 024 [debug] : |         Start Express Server         |
+22/12/21 11:58:42 025 [debug] : ---------------------------------------
+22/12/21 11:58:42 026 [debug] : server address => http://192.168.0.14:3001
+22/12/21 11:58:42 026 [debug] : ---------------------------------------
+22/12/21 18:00:18 933 [debug] : 백엔드가 종료되었습니다.

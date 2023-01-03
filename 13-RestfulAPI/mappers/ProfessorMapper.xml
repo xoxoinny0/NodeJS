@@ -71,7 +71,7 @@
 
     <!-- 데이터 갱신을 위한 기능 정의-->
     <update id="updateItem">
-        UPDATE professor SET name=#{name}, userid=#{userid}, position=#{position}, sal=#{sal}, hiredate=#{hiredate}, comm=#{comm}, deptno=#{deptno}
+        UPDATE professor SET name=#{name}, userid=#{userid}, position=#{position}, sal=#{sal}, hiredate=#{hiredate}, comm=#{comm}, deptno=#{deptno},
         WHERE profno=#{profno};
     </update>
 

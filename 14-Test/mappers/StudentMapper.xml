@@ -1,13 +1,14 @@
+<!--
+ @FileName: StudentMapper.xml
+ @Author: 유지인
+ @Description: 교수 테이블에 대한 Restful API 구축을 위한 Mapper
+               삭제하려는 교수가 담당하는 학생이 있을 경우 필요
+ / -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="StudentMapper">
-
-    <!-- 특정 학과에 속한 학생 일괄 삭제 -->
-    <delete id="deleteItemByDeptno">
-        DELETE FROM student WHERE deptno=#{deptno};
-    </delete>
 
     <!-- 특정 교수가 담당하는 학생 일괄 삭제 -->
     <delete id="deleteItemByProfno">

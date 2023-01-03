@@ -1,7 +1,7 @@
 <!--
  @FileName: ProfessorMapper.xml
  @Author: 유지인
- @Description: 
+ @Description: 교수 테이블에 대한 Restful API 구축을 위한 Mapper
  / -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -11,14 +11,26 @@
 
     <!-- 단일행 조회를 위한 기능 정의 -->
     <select id="selectItem">
-        SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno=#{profno};
-        <!-- SELECT profno FROM professor WHERE profno=#{profno}; -->
+        SELECT
+            profno, name, userid, position, sal,
+            date_format(hiredate, '%Y-%m-%d') as h_date,
+            comm, p.deptno, dname
+        FROM professor as p
+        INNER JOIN department as d
+        ON p.deptno = d.deptno 
+        WHERE profno=#{profno};
 
     </select>
 
     <!-- 다중행 조회를 위한 기능 정의 -->
     <select id="selectList">
-        SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor
+        SELECT
+            profno, name, userid, position, sal,
+            date_format(hiredate, '%Y-%m-%d') as h_date,
+            comm, p.deptno, dname
+        FROM professor as p
+        INNER JOIN department as d
+        ON p.deptno = d.deptno
 
         <where>
             <if test="name != null and name != ''">
@@ -45,15 +57,15 @@
                 OR comm LIKE concat('%', #{comm}, '%')
             </if>
 
-            <if test="deptno != null and deptno != ''">
-                OR deptno LIKE concat('%', #{deptno}, '%')
+            <if test="p.deptno != null and p.deptno != ''">
+                OR p.deptno LIKE concat('%', #{p.deptno}, '%')
             </if>
 
         </where>
 
         ORDER BY profno DESC
 
-        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+    <!-- 페이지 구현을 위한 LIMIT절 추가 -->
         <if test="listCount > 0">
             LIMIT ${offset}, ${listCount}
         </if>

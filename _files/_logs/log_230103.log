@@ -1,0 +1,1449 @@
+23/01/03 00:03:57 677 [info] :  >> DATABASE 접속됨 [threadId=39]
+23/01/03 00:03:57 681 [info] :  >> Connection 임대됨 [threadId=39]
+23/01/03 00:03:57 685 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:03:57 713 [info] :  >> Connection 반납됨 [threadId=39]
+23/01/03 00:04:28 261 [info] :  >> DATABASE 접속됨 [threadId=40]
+23/01/03 00:04:28 264 [info] :  >> Connection 임대됨 [threadId=40]
+23/01/03 00:04:28 267 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9922';
+23/01/03 00:04:28 275 [info] :  >> Connection 반납됨 [threadId=40]
+23/01/03 00:04:49 903 [info] :  >> DATABASE 접속됨 [threadId=41]
+23/01/03 00:04:49 905 [info] :  >> Connection 임대됨 [threadId=41]
+23/01/03 00:04:49 908 [debug] : DELETE FROM professor WHERE profno='9922'
+23/01/03 00:04:49 922 [info] :  >> Connection 반납됨 [threadId=41]
+23/01/03 00:05:10 004 [info] :  >> DATABASE 접속됨 [threadId=42]
+23/01/03 00:05:10 008 [info] :  >> Connection 임대됨 [threadId=42]
+23/01/03 00:05:10 011 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:05:10 019 [info] :  >> Connection 반납됨 [threadId=42]
+23/01/03 00:05:30 445 [info] :  >> DATABASE 접속됨 [threadId=43]
+23/01/03 00:05:30 455 [info] :  >> Connection 임대됨 [threadId=43]
+23/01/03 00:05:30 468 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:05:30 484 [info] :  >> Connection 반납됨 [threadId=43]
+23/01/03 00:05:37 843 [info] :  >> DATABASE 접속됨 [threadId=44]
+23/01/03 00:05:37 846 [info] :  >> Connection 임대됨 [threadId=44]
+23/01/03 00:05:37 854 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:05:37 861 [info] :  >> Connection 반납됨 [threadId=44]
+23/01/03 00:05:53 929 [info] :  >> DATABASE 접속됨 [threadId=45]
+23/01/03 00:05:53 935 [info] :  >> Connection 임대됨 [threadId=45]
+23/01/03 00:05:53 940 [info] :  >> Connection 반납됨 [threadId=45]
+23/01/03 00:06:26 464 [info] :  >> DATABASE 접속됨 [threadId=46]
+23/01/03 00:06:26 467 [info] :  >> Connection 임대됨 [threadId=46]
+23/01/03 00:06:43 618 [info] :  >> DATABASE 접속됨 [threadId=47]
+23/01/03 00:06:43 622 [info] :  >> Connection 임대됨 [threadId=47]
+23/01/03 00:07:06 333 [info] :  >> DATABASE 접속됨 [threadId=48]
+23/01/03 00:07:06 336 [info] :  >> Connection 임대됨 [threadId=48]
+23/01/03 00:07:06 340 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='교수', sal='300', hiredate='2022-01-01', comm='20', deptno='201',  WHERE profno='9922';
+23/01/03 00:09:52 510 [info] :  >> DATABASE 접속됨 [threadId=49]
+23/01/03 00:09:52 514 [info] :  >> Connection 임대됨 [threadId=49]
+23/01/03 00:09:52 518 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 00:09:52 533 [info] :  >> Connection 반납됨 [threadId=49]
+23/01/03 00:10:30 128 [info] :  >> DATABASE 접속됨 [threadId=50]
+23/01/03 00:10:30 130 [info] :  >> Connection 임대됨 [threadId=50]
+23/01/03 00:10:30 134 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 00:10:30 148 [info] :  >> Connection 반납됨 [threadId=50]
+23/01/03 00:11:53 856 [info] :  >> DATABASE 접속됨 [threadId=51]
+23/01/03 00:11:53 859 [info] :  >> Connection 임대됨 [threadId=51]
+23/01/03 00:11:53 861 [info] :  >> Connection 반납됨 [threadId=51]
+23/01/03 00:14:34 166 [info] :  >> DATABASE 접속됨 [threadId=52]
+23/01/03 00:14:34 170 [info] :  >> Connection 임대됨 [threadId=52]
+23/01/03 00:14:34 176 [debug] : DELETE FROM professor WHERE profno='9905'
+23/01/03 00:15:09 450 [info] :  >> DATABASE 접속됨 [threadId=53]
+23/01/03 00:15:09 453 [info] :  >> Connection 임대됨 [threadId=53]
+23/01/03 00:15:42 063 [info] :  >> DATABASE 접속됨 [threadId=54]
+23/01/03 00:15:42 066 [info] :  >> Connection 임대됨 [threadId=54]
+23/01/03 00:15:42 069 [debug] : DELETE FROM student WHERE profno='9905';
+23/01/03 00:15:42 087 [info] :  >> Connection 반납됨 [threadId=54]
+23/01/03 00:16:08 933 [info] :  >> DATABASE 접속됨 [threadId=55]
+23/01/03 00:16:08 936 [info] :  >> Connection 임대됨 [threadId=55]
+23/01/03 00:16:08 939 [debug] : DELETE FROM professor WHERE profno='9905'
+23/01/03 00:16:08 944 [info] :  >> Connection 반납됨 [threadId=55]
+23/01/03 00:16:32 229 [info] :  >> DATABASE 접속됨 [threadId=56]
+23/01/03 00:16:32 234 [info] :  >> Connection 임대됨 [threadId=56]
+23/01/03 00:16:32 236 [info] :  >> Connection 반납됨 [threadId=56]
+23/01/03 00:16:56 915 [info] :  >> DATABASE 접속됨 [threadId=57]
+23/01/03 00:16:56 919 [info] :  >> Connection 임대됨 [threadId=57]
+23/01/03 00:16:56 925 [debug] : DELETE FROM professor WHERE profno='9923'
+23/01/03 00:16:56 930 [info] :  >> Connection 반납됨 [threadId=57]
+23/01/03 00:17:02 645 [info] :  >> DATABASE 접속됨 [threadId=58]
+23/01/03 00:17:02 650 [info] :  >> Connection 임대됨 [threadId=58]
+23/01/03 00:17:02 654 [debug] : DELETE FROM professor WHERE profno='9924'
+23/01/03 00:17:02 669 [info] :  >> Connection 반납됨 [threadId=58]
+23/01/03 00:17:11 812 [info] :  >> DATABASE 접속됨 [threadId=59]
+23/01/03 00:17:11 817 [info] :  >> Connection 임대됨 [threadId=59]
+23/01/03 00:17:11 827 [debug] : DELETE FROM professor WHERE profno='9925'
+23/01/03 00:17:11 831 [info] :  >> Connection 반납됨 [threadId=59]
+23/01/03 00:17:21 236 [info] :  >> DATABASE 접속됨 [threadId=60]
+23/01/03 00:17:21 240 [info] :  >> Connection 임대됨 [threadId=60]
+23/01/03 00:17:21 243 [info] :  >> Connection 반납됨 [threadId=60]
+23/01/03 00:17:48 156 [info] :  >> DATABASE 접속됨 [threadId=61]
+23/01/03 00:17:48 159 [info] :  >> Connection 임대됨 [threadId=61]
+23/01/03 00:17:48 163 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:17:48 170 [info] :  >> Connection 반납됨 [threadId=61]
+23/01/03 00:17:53 895 [info] :  >> DATABASE 접속됨 [threadId=62]
+23/01/03 00:17:53 898 [info] :  >> Connection 임대됨 [threadId=62]
+23/01/03 00:17:53 899 [info] :  >> Connection 반납됨 [threadId=62]
+23/01/03 00:18:13 238 [info] :  >> DATABASE 접속됨 [threadId=63]
+23/01/03 00:18:13 241 [info] :  >> Connection 임대됨 [threadId=63]
+23/01/03 00:18:13 245 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='교수', sal='300', hiredate='2022-01-01', comm='20', deptno='201',  WHERE profno='9922';
+23/01/03 00:19:58 347 [info] :  >> DATABASE 접속됨 [threadId=64]
+23/01/03 00:19:58 352 [info] :  >> Connection 임대됨 [threadId=64]
+23/01/03 00:19:58 356 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='202',  WHERE profno='9922';
+23/01/03 00:20:12 396 [info] :  >> DATABASE 접속됨 [threadId=65]
+23/01/03 00:20:12 398 [info] :  >> Connection 임대됨 [threadId=65]
+23/01/03 00:20:12 402 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='202',  WHERE profno='9926';
+23/01/03 00:21:10 683 [info] :  >> DATABASE 접속됨 [threadId=66]
+23/01/03 00:21:10 689 [info] :  >> Connection 임대됨 [threadId=66]
+23/01/03 00:21:10 693 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='202',  WHERE profno='9926';
+23/01/03 00:23:41 921 [info] :  >> DATABASE 접속됨 [threadId=67]
+23/01/03 00:23:41 924 [info] :  >> Connection 임대됨 [threadId=67]
+23/01/03 00:23:41 927 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='202'  WHERE profno='9926';
+23/01/03 00:23:41 933 [info] :  >> Connection 반납됨 [threadId=67]
+23/01/03 00:41:32 568 [info] :  >> DATABASE 접속됨 [threadId=68]
+23/01/03 00:41:32 572 [info] :  >> Connection 임대됨 [threadId=68]
+23/01/03 00:41:32 578 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC
+23/01/03 00:41:32 601 [info] :  >> Connection 반납됨 [threadId=68]
+23/01/03 00:42:43 581 [info] :  >> DATABASE 접속됨 [threadId=69]
+23/01/03 00:42:43 584 [info] :  >> Connection 임대됨 [threadId=69]
+23/01/03 00:42:43 592 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC
+23/01/03 00:42:43 629 [info] :  >> Connection 반납됨 [threadId=69]
+23/01/03 00:42:51 809 [info] :  >> DATABASE 접속됨 [threadId=70]
+23/01/03 00:42:51 812 [info] :  >> Connection 임대됨 [threadId=70]
+23/01/03 00:42:51 816 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC
+23/01/03 00:42:51 823 [info] :  >> Connection 반납됨 [threadId=70]
+23/01/03 00:43:18 675 [info] :  >> DATABASE 접속됨 [threadId=71]
+23/01/03 00:43:18 678 [info] :  >> Connection 임대됨 [threadId=71]
+23/01/03 00:43:18 683 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC
+23/01/03 00:43:18 689 [info] :  >> Connection 반납됨 [threadId=71]
+23/01/03 00:43:39 714 [info] :  >> DATABASE 접속됨 [threadId=72]
+23/01/03 00:43:39 717 [info] :  >> Connection 임대됨 [threadId=72]
+23/01/03 00:43:39 719 [info] :  >> Connection 반납됨 [threadId=72]
+23/01/03 00:44:23 750 [info] :  >> DATABASE 접속됨 [threadId=73]
+23/01/03 00:44:23 753 [info] :  >> Connection 임대됨 [threadId=73]
+23/01/03 00:44:23 756 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:44:23 762 [info] :  >> Connection 반납됨 [threadId=73]
+23/01/03 00:44:44 518 [info] :  >> DATABASE 접속됨 [threadId=74]
+23/01/03 00:44:44 521 [info] :  >> Connection 임대됨 [threadId=74]
+23/01/03 00:44:44 523 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:44:44 530 [info] :  >> Connection 반납됨 [threadId=74]
+23/01/03 00:44:58 139 [info] :  >> DATABASE 접속됨 [threadId=75]
+23/01/03 00:44:58 143 [info] :  >> Connection 임대됨 [threadId=75]
+23/01/03 00:44:58 146 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:44:58 154 [info] :  >> Connection 반납됨 [threadId=75]
+23/01/03 00:45:02 506 [info] :  >> DATABASE 접속됨 [threadId=76]
+23/01/03 00:45:02 510 [info] :  >> Connection 임대됨 [threadId=76]
+23/01/03 00:45:02 516 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:45:02 534 [info] :  >> Connection 반납됨 [threadId=76]
+23/01/03 00:45:13 828 [info] :  >> DATABASE 접속됨 [threadId=77]
+23/01/03 00:45:13 832 [info] :  >> Connection 임대됨 [threadId=77]
+23/01/03 00:45:13 835 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:45:13 842 [info] :  >> Connection 반납됨 [threadId=77]
+23/01/03 00:45:18 733 [info] :  >> DATABASE 접속됨 [threadId=78]
+23/01/03 00:45:18 736 [info] :  >> Connection 임대됨 [threadId=78]
+23/01/03 00:45:18 739 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:45:18 745 [info] :  >> Connection 반납됨 [threadId=78]
+23/01/03 00:45:25 323 [info] :  >> DATABASE 접속됨 [threadId=79]
+23/01/03 00:45:25 327 [info] :  >> Connection 임대됨 [threadId=79]
+23/01/03 00:45:25 332 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:45:25 342 [info] :  >> Connection 반납됨 [threadId=79]
+23/01/03 00:45:32 629 [info] :  >> DATABASE 접속됨 [threadId=80]
+23/01/03 00:45:32 633 [info] :  >> Connection 임대됨 [threadId=80]
+23/01/03 00:45:32 637 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:45:32 643 [info] :  >> Connection 반납됨 [threadId=80]
+23/01/03 00:46:10 066 [info] :  >> DATABASE 접속됨 [threadId=81]
+23/01/03 00:46:10 074 [info] :  >> Connection 임대됨 [threadId=81]
+23/01/03 00:46:10 079 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 00:46:10 087 [info] :  >> Connection 반납됨 [threadId=81]
+23/01/03 00:46:51 967 [info] :  >> DATABASE 접속됨 [threadId=82]
+23/01/03 00:46:51 970 [info] :  >> Connection 임대됨 [threadId=82]
+23/01/03 00:46:51 972 [info] :  >> Connection 반납됨 [threadId=82]
+23/01/03 00:48:26 652 [info] :  >> DATABASE 접속됨 [threadId=83]
+23/01/03 00:48:26 654 [info] :  >> Connection 임대됨 [threadId=83]
+23/01/03 00:48:26 658 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:48:26 665 [info] :  >> Connection 반납됨 [threadId=83]
+23/01/03 00:50:41 830 [info] :  >> DATABASE 접속됨 [threadId=84]
+23/01/03 00:50:41 834 [info] :  >> Connection 임대됨 [threadId=84]
+23/01/03 00:50:41 837 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:50:41 845 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9928';
+23/01/03 00:50:41 859 [info] :  >> Connection 반납됨 [threadId=84]
+23/01/03 00:51:59 255 [info] :  >> DATABASE 접속됨 [threadId=85]
+23/01/03 00:51:59 260 [info] :  >> Connection 임대됨 [threadId=85]
+23/01/03 00:51:59 267 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:51:59 273 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9929';
+23/01/03 00:51:59 282 [info] :  >> Connection 반납됨 [threadId=85]
+23/01/03 00:52:52 572 [info] :  >> DATABASE 접속됨 [threadId=86]
+23/01/03 00:52:52 575 [info] :  >> Connection 임대됨 [threadId=86]
+23/01/03 00:52:52 578 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 00:52:52 586 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9930';
+23/01/03 00:52:52 593 [info] :  >> Connection 반납됨 [threadId=86]
+23/01/03 00:58:18 254 [info] :  >> DATABASE 접속됨 [threadId=87]
+23/01/03 00:58:18 256 [info] :  >> Connection 임대됨 [threadId=87]
+23/01/03 00:58:18 259 [info] :  >> Connection 반납됨 [threadId=87]
+23/01/03 00:58:54 342 [info] :  >> DATABASE 접속됨 [threadId=88]
+23/01/03 00:58:54 448 [info] :  >> Connection 임대됨 [threadId=88]
+23/01/03 00:58:54 497 [info] :  >> Connection 반납됨 [threadId=88]
+23/01/03 00:59:08 532 [info] :  >> DATABASE 접속됨 [threadId=89]
+23/01/03 00:59:08 536 [info] :  >> Connection 임대됨 [threadId=89]
+23/01/03 00:59:08 539 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='202'  WHERE profno='9930';
+23/01/03 00:59:08 544 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9930';
+23/01/03 00:59:08 549 [info] :  >> Connection 반납됨 [threadId=89]
+23/01/03 01:05:15 894 [info] :  >> DATABASE 접속됨 [threadId=90]
+23/01/03 01:05:15 896 [info] :  >> Connection 임대됨 [threadId=90]
+23/01/03 01:05:15 899 [debug] : DELETE FROM student WHERE profno='9930';
+23/01/03 01:05:15 907 [debug] : DELETE FROM professor WHERE profno='9930'
+23/01/03 01:05:15 911 [info] :  >> Connection 반납됨 [threadId=90]
+23/01/03 01:06:28 727 [info] :  >> DATABASE 접속됨 [threadId=91]
+23/01/03 01:06:28 730 [info] :  >> Connection 임대됨 [threadId=91]
+23/01/03 01:06:28 733 [debug] : DELETE FROM student WHERE profno='9930';
+23/01/03 01:06:28 737 [debug] : DELETE FROM professor WHERE profno='9930'
+23/01/03 01:06:28 739 [info] :  >> Connection 반납됨 [threadId=91]
+23/01/03 01:06:46 410 [info] :  >> DATABASE 접속됨 [threadId=92]
+23/01/03 01:06:46 413 [info] :  >> Connection 임대됨 [threadId=92]
+23/01/03 01:06:46 417 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:06:46 431 [info] :  >> Connection 반납됨 [threadId=92]
+23/01/03 01:12:59 661 [info] :  >> DATABASE 접속됨 [threadId=93]
+23/01/03 01:12:59 668 [info] :  >> Connection 임대됨 [threadId=93]
+23/01/03 01:12:59 675 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:12:59 682 [info] :  >> Connection 반납됨 [threadId=93]
+23/01/03 01:15:07 451 [info] :  >> DATABASE 접속됨 [threadId=94]
+23/01/03 01:15:07 460 [info] :  >> Connection 임대됨 [threadId=94]
+23/01/03 01:15:07 607 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:15:07 654 [info] :  >> Connection 반납됨 [threadId=94]
+23/01/03 01:18:01 870 [info] :  >> DATABASE 접속됨 [threadId=95]
+23/01/03 01:18:01 877 [info] :  >> Connection 임대됨 [threadId=95]
+23/01/03 01:18:01 882 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:18:01 891 [info] :  >> Connection 반납됨 [threadId=95]
+23/01/03 01:18:12 461 [info] :  >> DATABASE 접속됨 [threadId=96]
+23/01/03 01:18:12 467 [info] :  >> Connection 임대됨 [threadId=96]
+23/01/03 01:18:12 473 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:18:12 479 [info] :  >> Connection 반납됨 [threadId=96]
+23/01/03 01:18:40 452 [info] :  >> DATABASE 접속됨 [threadId=97]
+23/01/03 01:18:40 456 [info] :  >> Connection 임대됨 [threadId=97]
+23/01/03 01:18:40 462 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:18:40 474 [info] :  >> Connection 반납됨 [threadId=97]
+23/01/03 01:26:15 336 [debug] : ---------------------------------------
+23/01/03 01:26:15 365 [debug] : |         Start Express Server         |
+23/01/03 01:26:15 367 [debug] : ---------------------------------------
+23/01/03 01:26:15 368 [debug] : server address => http://192.168.1.106:3001
+23/01/03 01:26:15 369 [debug] : ---------------------------------------
+23/01/03 01:28:12 941 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:28:12 943 [debug] : [GET] http://192.168.1.106:3001/department
+23/01/03 01:28:12 944 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:28:12 987 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/app.js:156:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+23/01/03 01:28:12 999 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 57ms
+23/01/03 01:28:13 001 [debug] : ---------------------------------------
+23/01/03 01:28:22 572 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:28:22 573 [debug] : [GET] http://192.168.1.106:3001/professor
+23/01/03 01:28:22 573 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:28:22 641 [info] :  >> DATABASE 접속됨 [threadId=99]
+23/01/03 01:28:22 642 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:28:22 648 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:28:22 667 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:28:22 668 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:28:22 677 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 01:28:22 682 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:28:22 693 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 120ms
+23/01/03 01:28:22 694 [debug] : ---------------------------------------
+23/01/03 01:30:54 045 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:30:54 045 [debug] : [GET] http://192.168.1.106:3001/professor?deptno=201
+23/01/03 01:30:54 046 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:30:54 047 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:30:54 050 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:30:54 063 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:30:54 064 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:30:54 065 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 01:30:54 067 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:30:54 068 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
+23/01/03 01:30:54 068 [debug] : ---------------------------------------
+23/01/03 01:31:23 462 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:31:23 462 [debug] : [GET] http://192.168.1.106:3001/professor?name=뚬땜이
+23/01/03 01:31:23 463 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:31:23 464 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:31:23 465 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:31:23 469 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:31:23 469 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:31:23 470 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 01:31:23 473 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:31:23 474 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/01/03 01:31:23 474 [debug] : ---------------------------------------
+23/01/03 01:32:22 612 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:32:22 612 [debug] : [GET] http://192.168.1.106:3001/professor/?name=뚬땜이
+23/01/03 01:32:22 612 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:32:22 614 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:32:22 615 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:32:22 619 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:32:22 620 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:32:22 620 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 01:32:22 622 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:32:22 623 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/01/03 01:32:22 623 [debug] : ---------------------------------------
+23/01/03 01:32:40 139 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:32:40 139 [debug] : [GET] http://192.168.1.106:3001/professor/?name=뚬땜이
+23/01/03 01:32:40 139 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:32:40 141 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:32:40 142 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 01:32:40 156 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:32:40 157 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:32:40 157 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 01:32:40 159 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:32:40 161 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 22ms
+23/01/03 01:32:40 162 [debug] : ---------------------------------------
+23/01/03 01:33:05 134 [debug] : 클라이언트가 접속했습니다.
+23/01/03 01:33:05 135 [debug] : [GET] http://192.168.1.106:3001/professor/?query=뚬땜이
+23/01/03 01:33:05 135 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 01:33:05 136 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:33:05 139 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '뚬땜이', '%')  OR userid LIKE concat('%', '뚬땜이', '%')  OR position LIKE concat('%', '뚬땜이', '%')  OR sal LIKE concat('%', '뚬땜이', '%')  OR hiredate LIKE concat('%', '뚬땜이', '%')  OR deptno LIKE concat('%', '뚬땜이', '%')
+23/01/03 01:33:05 152 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:33:05 152 [info] :  >> Connection 임대됨 [threadId=99]
+23/01/03 01:33:05 154 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  WHERE  name LIKE concat('%', '뚬땜이', '%')  OR userid LIKE concat('%', '뚬땜이', '%')  OR position LIKE concat('%', '뚬땜이', '%')  OR sal LIKE concat('%', '뚬땜이', '%')  OR hiredate LIKE concat('%', '뚬땜이', '%')  OR deptno LIKE concat('%', '뚬땜이', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 01:33:05 158 [info] :  >> Connection 반납됨 [threadId=99]
+23/01/03 01:33:05 160 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+23/01/03 01:33:05 160 [debug] : ---------------------------------------
+23/01/03 01:34:34 334 [debug] : 백엔드가 종료되었습니다.
+23/01/03 16:57:34 107 [info] :  >> DATABASE 접속됨 [threadId=100]
+23/01/03 16:57:34 111 [info] :  >> Connection 임대됨 [threadId=100]
+23/01/03 16:57:34 115 [debug] : UPDATE department SET dname='헬로학과(수정)', loc=NULL  WHERE deptno='305';
+23/01/03 16:57:34 188 [info] :  >> Connection 반납됨 [threadId=100]
+23/01/03 16:59:15 634 [info] :  >> DATABASE 접속됨 [threadId=101]
+23/01/03 16:59:15 637 [info] :  >> Connection 임대됨 [threadId=101]
+23/01/03 16:59:15 641 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='102'  WHERE profno='9929';
+23/01/03 16:59:15 665 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname, loc  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/03 16:59:15 687 [info] :  >> Connection 반납됨 [threadId=101]
+23/01/03 17:02:20 177 [info] :  >> DATABASE 접속됨 [threadId=102]
+23/01/03 17:02:20 183 [info] :  >> Connection 임대됨 [threadId=102]
+23/01/03 17:02:20 189 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname, loc  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/03 17:02:20 195 [info] :  >> Connection 반납됨 [threadId=102]
+23/01/03 17:09:20 980 [info] :  >> DATABASE 접속됨 [threadId=103]
+23/01/03 17:09:20 984 [info] :  >> Connection 임대됨 [threadId=103]
+23/01/03 17:09:20 990 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname, loc  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno=9902
+23/01/03 17:09:21 001 [info] :  >> Connection 반납됨 [threadId=103]
+23/01/03 17:13:24 828 [info] :  >> DATABASE 접속됨 [threadId=104]
+23/01/03 17:13:24 832 [info] :  >> Connection 임대됨 [threadId=104]
+23/01/03 17:13:24 834 [info] :  >> Connection 반납됨 [threadId=104]
+23/01/03 17:14:34 085 [info] :  >> DATABASE 접속됨 [threadId=105]
+23/01/03 17:14:34 088 [info] :  >> Connection 임대됨 [threadId=105]
+23/01/03 17:14:34 091 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/03 17:14:34 098 [info] :  >> Connection 반납됨 [threadId=105]
+23/01/03 17:15:16 357 [info] :  >> DATABASE 접속됨 [threadId=106]
+23/01/03 17:15:16 360 [info] :  >> Connection 임대됨 [threadId=106]
+23/01/03 17:15:16 363 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='102'  WHERE profno='9929';
+23/01/03 17:15:16 367 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno=9929
+23/01/03 17:15:16 373 [info] :  >> Connection 반납됨 [threadId=106]
+23/01/03 17:16:11 351 [debug] : ---------------------------------------
+23/01/03 17:16:11 357 [debug] : |         Start Express Server         |
+23/01/03 17:16:11 357 [debug] : ---------------------------------------
+23/01/03 17:16:11 358 [debug] : server address => http://192.168.1.106:3001
+23/01/03 17:16:11 358 [debug] : ---------------------------------------
+23/01/03 17:16:27 468 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:16:27 471 [debug] : [GET] http://192.168.1.106:3001/professor/?query=뚬땜이
+23/01/03 17:16:27 471 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:16:27 507 [info] :  >> DATABASE 접속됨 [threadId=108]
+23/01/03 17:16:27 508 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:16:27 513 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '뚬땜이', '%')  OR userid LIKE concat('%', '뚬땜이', '%')  OR position LIKE concat('%', '뚬땜이', '%')  OR sal LIKE concat('%', '뚬땜이', '%')  OR hiredate LIKE concat('%', '뚬땜이', '%')  OR deptno LIKE concat('%', '뚬땜이', '%')
+23/01/03 17:16:27 534 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:16:27 535 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:16:27 538 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  name LIKE concat('%', '뚬땜이', '%')  OR userid LIKE concat('%', '뚬땜이', '%')  OR position LIKE concat('%', '뚬땜이', '%')  OR sal LIKE concat('%', '뚬땜이', '%')  OR hiredate LIKE concat('%', '뚬땜이', '%')  OR deptno LIKE concat('%', '뚬땜이', '%')
+23/01/03 17:16:27 542 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:16:27 543 [error] : Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE concat('%', '뚬땜이', '%')
+         
+                OR userid LIKE' at line 12
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:26:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:16:27 549 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 79ms
+23/01/03 17:16:27 549 [debug] : ---------------------------------------
+23/01/03 17:17:50 099 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:17:50 100 [debug] : [GET] http://192.168.1.106:3001/professor/
+23/01/03 17:17:50 100 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:17:50 102 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:17:50 103 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 17:17:50 118 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:17:50 118 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:17:50 120 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/03 17:17:50 125 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:17:50 129 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/01/03 17:17:50 129 [debug] : ---------------------------------------
+23/01/03 17:18:37 001 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:18:37 003 [debug] : [GET] http://192.168.1.106:3001/professor/?query=이재우
+23/01/03 17:18:37 004 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:18:37 005 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:18:37 006 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '이재우', '%')  OR userid LIKE concat('%', '이재우', '%')  OR position LIKE concat('%', '이재우', '%')  OR sal LIKE concat('%', '이재우', '%')  OR hiredate LIKE concat('%', '이재우', '%')  OR deptno LIKE concat('%', '이재우', '%')
+23/01/03 17:18:37 008 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:18:37 008 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:18:37 009 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  name LIKE concat('%', '이재우', '%')  OR userid LIKE concat('%', '이재우', '%')  OR position LIKE concat('%', '이재우', '%')  OR sal LIKE concat('%', '이재우', '%')  OR hiredate LIKE concat('%', '이재우', '%')  OR deptno LIKE concat('%', '이재우', '%')
+23/01/03 17:18:37 010 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:18:37 011 [error] : Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE concat('%', '이재우', '%')
+         
+                OR userid LIKE' at line 12
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:26:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:18:37 012 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/01/03 17:18:37 012 [debug] : ---------------------------------------
+23/01/03 17:20:16 201 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:20:16 202 [debug] : [GET] http://192.168.1.106:3001/professor/?profno=102
+23/01/03 17:20:16 202 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:20:16 203 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:20:16 204 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 17:20:16 207 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:20:16 207 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:20:16 208 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/03 17:20:16 210 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:20:16 211 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/01/03 17:20:16 211 [debug] : ---------------------------------------
+23/01/03 17:20:35 210 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:20:35 211 [debug] : [GET] http://192.168.1.106:3001/professor/?query=9902
+23/01/03 17:20:35 211 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:20:35 212 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:20:35 213 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '9902', '%')  OR userid LIKE concat('%', '9902', '%')  OR position LIKE concat('%', '9902', '%')  OR sal LIKE concat('%', '9902', '%')  OR hiredate LIKE concat('%', '9902', '%')  OR deptno LIKE concat('%', '9902', '%')
+23/01/03 17:20:35 214 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:20:35 215 [info] :  >> Connection 임대됨 [threadId=108]
+23/01/03 17:20:35 217 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  name LIKE concat('%', '9902', '%')  OR userid LIKE concat('%', '9902', '%')  OR position LIKE concat('%', '9902', '%')  OR sal LIKE concat('%', '9902', '%')  OR hiredate LIKE concat('%', '9902', '%')  OR deptno LIKE concat('%', '9902', '%')
+23/01/03 17:20:35 219 [info] :  >> Connection 반납됨 [threadId=108]
+23/01/03 17:20:35 219 [error] : Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name LIKE concat('%', '9902', '%')
+         
+                OR userid LIKE conc' at line 12
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:26:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:20:35 220 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/01/03 17:20:35 222 [debug] : ---------------------------------------
+23/01/03 17:28:08 507 [debug] : ---------------------------------------
+23/01/03 17:28:08 511 [debug] : |         Start Express Server         |
+23/01/03 17:28:08 511 [debug] : ---------------------------------------
+23/01/03 17:28:08 513 [debug] : server address => http://192.168.1.106:3001
+23/01/03 17:28:08 514 [debug] : ---------------------------------------
+23/01/03 17:28:19 789 [debug] : ---------------------------------------
+23/01/03 17:28:19 793 [debug] : |         Start Express Server         |
+23/01/03 17:28:19 794 [debug] : ---------------------------------------
+23/01/03 17:28:19 797 [debug] : server address => http://192.168.1.106:3001
+23/01/03 17:28:19 797 [debug] : ---------------------------------------
+23/01/03 17:28:34 623 [debug] : 백엔드가 종료되었습니다.
+23/01/03 17:28:38 129 [info] :  >> DATABASE 접속됨 [threadId=111]
+23/01/03 17:28:38 132 [info] :  >> Connection 임대됨 [threadId=111]
+23/01/03 17:28:38 135 [debug] : 
+23/01/03 17:28:38 138 [info] :  >> Connection 반납됨 [threadId=111]
+23/01/03 17:29:50 394 [info] :  >> DATABASE 접속됨 [threadId=112]
+23/01/03 17:29:50 397 [info] :  >> Connection 임대됨 [threadId=112]
+23/01/03 17:29:50 399 [debug] : 
+23/01/03 17:29:50 402 [info] :  >> Connection 반납됨 [threadId=112]
+23/01/03 17:30:12 356 [info] :  >> DATABASE 접속됨 [threadId=113]
+23/01/03 17:30:12 359 [info] :  >> Connection 임대됨 [threadId=113]
+23/01/03 17:30:12 366 [debug] : 
+23/01/03 17:30:12 368 [info] :  >> Connection 반납됨 [threadId=113]
+23/01/03 17:33:07 401 [info] :  >> DATABASE 접속됨 [threadId=114]
+23/01/03 17:33:07 404 [info] :  >> Connection 임대됨 [threadId=114]
+23/01/03 17:33:07 407 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/03 17:33:07 414 [info] :  >> Connection 반납됨 [threadId=114]
+23/01/03 17:33:53 621 [info] :  >> DATABASE 접속됨 [threadId=115]
+23/01/03 17:33:53 624 [info] :  >> Connection 임대됨 [threadId=115]
+23/01/03 17:33:53 626 [debug] : 
+23/01/03 17:33:53 629 [info] :  >> Connection 반납됨 [threadId=115]
+23/01/03 17:34:11 191 [info] :  >> DATABASE 접속됨 [threadId=116]
+23/01/03 17:34:11 194 [info] :  >> Connection 임대됨 [threadId=116]
+23/01/03 17:34:11 196 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9902';
+23/01/03 17:34:11 203 [info] :  >> Connection 반납됨 [threadId=116]
+23/01/03 17:35:11 457 [info] :  >> DATABASE 접속됨 [threadId=117]
+23/01/03 17:35:11 461 [info] :  >> Connection 임대됨 [threadId=117]
+23/01/03 17:35:11 466 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9902';
+23/01/03 17:35:11 476 [info] :  >> Connection 반납됨 [threadId=117]
+23/01/03 17:37:03 652 [info] :  >> DATABASE 접속됨 [threadId=118]
+23/01/03 17:37:03 655 [info] :  >> Connection 임대됨 [threadId=118]
+23/01/03 17:37:03 658 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('유지인', 'yoojiin', '교수', '300', '2022-01-01', '20', '201');
+23/01/03 17:37:03 671 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9931';
+23/01/03 17:37:03 676 [info] :  >> Connection 반납됨 [threadId=118]
+23/01/03 17:37:42 000 [info] :  >> DATABASE 접속됨 [threadId=119]
+23/01/03 17:37:42 003 [info] :  >> Connection 임대됨 [threadId=119]
+23/01/03 17:37:42 006 [debug] : UPDATE professor SET name='수정된이름', userid='updateid', position='부교수', sal='301', hiredate='2022-01-02', comm='30', deptno='102'  WHERE profno='9929';
+23/01/03 17:37:42 010 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9929';
+23/01/03 17:37:42 015 [info] :  >> Connection 반납됨 [threadId=119]
+23/01/03 17:38:28 365 [info] :  >> DATABASE 접속됨 [threadId=120]
+23/01/03 17:38:28 367 [info] :  >> Connection 임대됨 [threadId=120]
+23/01/03 17:38:28 370 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9902';
+23/01/03 17:38:28 382 [info] :  >> Connection 반납됨 [threadId=120]
+23/01/03 17:38:35 246 [info] :  >> DATABASE 접속됨 [threadId=121]
+23/01/03 17:38:35 248 [info] :  >> Connection 임대됨 [threadId=121]
+23/01/03 17:38:35 252 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno;  ORDER BY profno DESC
+23/01/03 17:38:35 255 [info] :  >> Connection 반납됨 [threadId=121]
+23/01/03 17:40:39 521 [info] :  >> DATABASE 접속됨 [threadId=122]
+23/01/03 17:40:39 524 [info] :  >> Connection 임대됨 [threadId=122]
+23/01/03 17:40:39 528 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC
+23/01/03 17:40:39 535 [info] :  >> Connection 반납됨 [threadId=122]
+23/01/03 17:41:03 530 [debug] : ---------------------------------------
+23/01/03 17:41:03 536 [debug] : |         Start Express Server         |
+23/01/03 17:41:03 538 [debug] : ---------------------------------------
+23/01/03 17:41:03 545 [debug] : server address => http://192.168.1.106:3001
+23/01/03 17:41:03 559 [debug] : ---------------------------------------
+23/01/03 17:41:07 700 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:41:07 702 [debug] : [GET] http://192.168.1.106:3001/professor/?query=9902
+23/01/03 17:41:07 703 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:41:07 795 [info] :  >> DATABASE 접속됨 [threadId=124]
+23/01/03 17:41:07 797 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:41:07 815 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '9902', '%')  OR userid LIKE concat('%', '9902', '%')  OR position LIKE concat('%', '9902', '%')  OR sal LIKE concat('%', '9902', '%')  OR hiredate LIKE concat('%', '9902', '%')  OR deptno LIKE concat('%', '9902', '%')
+23/01/03 17:41:07 839 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:41:07 841 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:41:07 848 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '9902', '%')  OR userid LIKE concat('%', '9902', '%')  OR position LIKE concat('%', '9902', '%')  OR sal LIKE concat('%', '9902', '%')  OR hiredate LIKE concat('%', '9902', '%')  OR deptno LIKE concat('%', '9902', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:41:07 921 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:41:07 924 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:41:07 943 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 242ms
+23/01/03 17:41:07 949 [debug] : ---------------------------------------
+23/01/03 17:41:33 861 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:41:33 862 [debug] : [GET] http://192.168.1.106:3001/professor/
+23/01/03 17:41:33 862 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:41:33 864 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:41:33 866 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 17:41:33 881 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:41:33 881 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:41:33 884 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:41:33 893 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:41:33 895 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+23/01/03 17:41:33 895 [debug] : ---------------------------------------
+23/01/03 17:41:52 132 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:41:52 133 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:41:52 133 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:41:52 134 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:41:52 137 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:41:52 138 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:41:52 139 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:41:52 140 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:41:52 141 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:41:52 142 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:41:52 143 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/01/03 17:41:52 143 [debug] : ---------------------------------------
+23/01/03 17:48:26 507 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:48:26 509 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:48:26 509 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:48:26 511 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:48:26 515 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:48:26 517 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:48:26 517 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:48:26 518 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:48:26 519 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:48:26 520 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:48:26 521 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/01/03 17:48:26 521 [debug] : ---------------------------------------
+23/01/03 17:48:40 013 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:48:40 014 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:48:40 015 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:48:40 016 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:48:40 017 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:48:40 018 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:48:40 019 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:48:40 020 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:48:40 021 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:48:40 022 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:48:40 023 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/01/03 17:48:40 023 [debug] : ---------------------------------------
+23/01/03 17:48:58 554 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:48:58 554 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:48:58 555 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:48:58 556 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:48:58 557 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:48:58 559 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:48:58 560 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:48:58 561 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:48:58 561 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:48:58 561 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:48:58 562 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/01/03 17:48:58 563 [debug] : ---------------------------------------
+23/01/03 17:49:26 589 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:49:26 590 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:49:26 590 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:49:26 591 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:49:26 592 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:49:26 593 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:49:26 593 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:49:26 594 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:49:26 595 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:49:26 595 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:49:26 596 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/01/03 17:49:26 596 [debug] : ---------------------------------------
+23/01/03 17:49:32 530 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:49:32 530 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:49:32 531 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:49:32 533 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:49:32 534 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:49:32 537 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:49:32 537 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:49:32 539 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:49:32 541 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:49:32 541 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:49:32 542 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/01/03 17:49:32 542 [debug] : ---------------------------------------
+23/01/03 17:49:33 948 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:49:33 949 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:49:33 950 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:49:33 952 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:49:33 953 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:49:33 954 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:49:33 955 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:49:33 955 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:49:33 956 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:49:33 957 [error] : Error: Column 'deptno' in where clause is ambiguous
+    at PromisePoolConnection.query (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mysql2/promise.js:93:22)
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:25:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:49:33 958 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/01/03 17:49:33 958 [debug] : ---------------------------------------
+23/01/03 17:51:10 762 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:51:10 762 [debug] : [GET] http://192.168.1.106:3001/professor/
+23/01/03 17:51:10 762 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:51:10 763 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:51:10 764 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 17:51:10 767 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:51:10 768 [info] :  >> Connection 임대됨 [threadId=124]
+23/01/03 17:51:10 768 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:51:10 771 [info] :  >> Connection 반납됨 [threadId=124]
+23/01/03 17:51:10 773 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/01/03 17:51:10 773 [debug] : ---------------------------------------
+23/01/03 17:53:39 420 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:53:39 420 [debug] : [GET] http://192.168.1.106:3001/professor/9931
+23/01/03 17:53:39 420 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:53:39 422 [error] : ReferenceError: deptno is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:53:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+23/01/03 17:53:39 425 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/01/03 17:53:39 425 [debug] : ---------------------------------------
+23/01/03 17:54:43 238 [debug] : ---------------------------------------
+23/01/03 17:54:43 242 [debug] : |         Start Express Server         |
+23/01/03 17:54:43 242 [debug] : ---------------------------------------
+23/01/03 17:54:43 243 [debug] : server address => http://192.168.1.106:3001
+23/01/03 17:54:43 243 [debug] : ---------------------------------------
+23/01/03 17:54:48 167 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:54:48 169 [debug] : [GET] http://192.168.1.106:3001/professor/9931
+23/01/03 17:54:48 169 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:54:48 176 [error] : ReferenceError: deptno is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:53:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+23/01/03 17:54:48 182 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+23/01/03 17:54:48 182 [debug] : ---------------------------------------
+23/01/03 17:55:05 826 [debug] : ---------------------------------------
+23/01/03 17:55:05 830 [debug] : |         Start Express Server         |
+23/01/03 17:55:05 830 [debug] : ---------------------------------------
+23/01/03 17:55:05 831 [debug] : server address => http://192.168.1.106:3001
+23/01/03 17:55:05 831 [debug] : ---------------------------------------
+23/01/03 17:55:06 887 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:55:06 889 [debug] : [GET] http://192.168.1.106:3001/professor/9931
+23/01/03 17:55:06 889 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:55:06 928 [info] :  >> DATABASE 접속됨 [threadId=127]
+23/01/03 17:55:06 930 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:55:06 933 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9931';
+23/01/03 17:55:06 941 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:55:06 948 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 60ms
+23/01/03 17:55:06 949 [debug] : ---------------------------------------
+23/01/03 17:56:51 155 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:56:51 156 [debug] : [GET] http://192.168.1.106:3001/professor/
+23/01/03 17:56:51 156 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:56:51 158 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:56:51 161 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 17:56:51 180 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:56:51 181 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:56:51 184 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:56:51 187 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:56:51 189 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+23/01/03 17:56:51 189 [debug] : ---------------------------------------
+23/01/03 17:58:06 426 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:58:06 427 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수
+23/01/03 17:58:06 427 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:58:06 429 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:58:06 431 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 17:58:06 432 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:58:06 432 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:58:06 434 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:58:06 436 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:58:06 437 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/01/03 17:58:06 438 [debug] : ---------------------------------------
+23/01/03 17:58:39 503 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:58:39 503 [debug] : [GET] http://192.168.1.106:3001/professor/?query=유징ㄴ
+23/01/03 17:58:39 504 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:58:39 506 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:58:39 508 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '유징ㄴ', '%')  OR userid LIKE concat('%', '유징ㄴ', '%')  OR position LIKE concat('%', '유징ㄴ', '%')  OR sal LIKE concat('%', '유징ㄴ', '%')  OR hiredate LIKE concat('%', '유징ㄴ', '%')  OR deptno LIKE concat('%', '유징ㄴ', '%')
+23/01/03 17:58:39 510 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:58:39 510 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:58:39 511 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '유징ㄴ', '%')  OR userid LIKE concat('%', '유징ㄴ', '%')  OR position LIKE concat('%', '유징ㄴ', '%')  OR sal LIKE concat('%', '유징ㄴ', '%')  OR hiredate LIKE concat('%', '유징ㄴ', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:58:39 514 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:58:39 514 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at ProfessorService.getList (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:28:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:38:14
+23/01/03 17:58:39 516 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/01/03 17:58:39 516 [debug] : ---------------------------------------
+23/01/03 17:58:47 649 [debug] : 클라이언트가 접속했습니다.
+23/01/03 17:58:47 650 [debug] : [GET] http://192.168.1.106:3001/professor/?query=유지인
+23/01/03 17:58:47 650 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 17:58:47 651 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:58:47 653 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '유지인', '%')  OR userid LIKE concat('%', '유지인', '%')  OR position LIKE concat('%', '유지인', '%')  OR sal LIKE concat('%', '유지인', '%')  OR hiredate LIKE concat('%', '유지인', '%')  OR deptno LIKE concat('%', '유지인', '%')
+23/01/03 17:58:47 654 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:58:47 654 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 17:58:47 655 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '유지인', '%')  OR userid LIKE concat('%', '유지인', '%')  OR position LIKE concat('%', '유지인', '%')  OR sal LIKE concat('%', '유지인', '%')  OR hiredate LIKE concat('%', '유지인', '%')  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 17:58:47 660 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 17:58:47 662 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/01/03 17:58:47 662 [debug] : ---------------------------------------
+23/01/03 18:00:13 065 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:00:13 066 [debug] : [GET] http://192.168.1.106:3001/professor/1?query=유지인
+23/01/03 18:00:13 066 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:00:13 068 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 18:00:13 069 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='1';
+23/01/03 18:00:13 072 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 18:00:13 072 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at ProfessorService.getItem (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:54:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:63:14
+23/01/03 18:00:13 073 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/01/03 18:00:13 073 [debug] : ---------------------------------------
+23/01/03 18:00:25 729 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:00:25 730 [debug] : [GET] http://192.168.1.106:3001/professor/1
+23/01/03 18:00:25 730 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:00:25 731 [info] :  >> Connection 임대됨 [threadId=127]
+23/01/03 18:00:25 732 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='1';
+23/01/03 18:00:25 734 [info] :  >> Connection 반납됨 [threadId=127]
+23/01/03 18:00:25 734 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at ProfessorService.getItem (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:54:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:63:14
+23/01/03 18:00:25 735 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/01/03 18:00:25 735 [debug] : ---------------------------------------
+23/01/03 18:01:06 245 [debug] : ---------------------------------------
+23/01/03 18:01:06 535 [debug] : |         Start Express Server         |
+23/01/03 18:01:06 537 [debug] : ---------------------------------------
+23/01/03 18:01:06 539 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:01:06 541 [debug] : ---------------------------------------
+23/01/03 18:03:02 902 [debug] : ---------------------------------------
+23/01/03 18:03:02 906 [debug] : |         Start Express Server         |
+23/01/03 18:03:02 906 [debug] : ---------------------------------------
+23/01/03 18:03:02 907 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:03:02 908 [debug] : ---------------------------------------
+23/01/03 18:03:19 518 [debug] : ---------------------------------------
+23/01/03 18:03:19 523 [debug] : |         Start Express Server         |
+23/01/03 18:03:19 523 [debug] : ---------------------------------------
+23/01/03 18:03:19 524 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:03:19 524 [debug] : ---------------------------------------
+23/01/03 18:03:29 143 [debug] : ---------------------------------------
+23/01/03 18:03:29 148 [debug] : |         Start Express Server         |
+23/01/03 18:03:29 149 [debug] : ---------------------------------------
+23/01/03 18:03:29 150 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:03:29 151 [debug] : ---------------------------------------
+23/01/03 18:06:30 607 [debug] : ---------------------------------------
+23/01/03 18:06:30 750 [debug] : |         Start Express Server         |
+23/01/03 18:06:30 751 [debug] : ---------------------------------------
+23/01/03 18:06:30 757 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:06:30 762 [debug] : ---------------------------------------
+23/01/03 18:06:36 943 [debug] : ---------------------------------------
+23/01/03 18:06:36 945 [debug] : |         Start Express Server         |
+23/01/03 18:06:36 946 [debug] : ---------------------------------------
+23/01/03 18:06:36 946 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:06:36 946 [debug] : ---------------------------------------
+23/01/03 18:07:22 618 [debug] : ---------------------------------------
+23/01/03 18:07:22 622 [debug] : |         Start Express Server         |
+23/01/03 18:07:22 622 [debug] : ---------------------------------------
+23/01/03 18:07:22 623 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:07:22 624 [debug] : ---------------------------------------
+23/01/03 18:07:36 359 [debug] : ---------------------------------------
+23/01/03 18:07:36 362 [debug] : |         Start Express Server         |
+23/01/03 18:07:36 362 [debug] : ---------------------------------------
+23/01/03 18:07:36 363 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:07:36 363 [debug] : ---------------------------------------
+23/01/03 18:07:49 065 [debug] : ---------------------------------------
+23/01/03 18:07:49 072 [debug] : |         Start Express Server         |
+23/01/03 18:07:49 073 [debug] : ---------------------------------------
+23/01/03 18:07:49 073 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:07:49 074 [debug] : ---------------------------------------
+23/01/03 18:11:58 646 [debug] : ---------------------------------------
+23/01/03 18:11:58 652 [debug] : |         Start Express Server         |
+23/01/03 18:11:58 687 [debug] : ---------------------------------------
+23/01/03 18:11:58 706 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:11:58 709 [debug] : ---------------------------------------
+23/01/03 18:12:13 159 [debug] : ---------------------------------------
+23/01/03 18:12:13 162 [debug] : |         Start Express Server         |
+23/01/03 18:12:13 163 [debug] : ---------------------------------------
+23/01/03 18:12:13 166 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:12:13 167 [debug] : ---------------------------------------
+23/01/03 18:13:11 021 [debug] : ---------------------------------------
+23/01/03 18:13:11 024 [debug] : |         Start Express Server         |
+23/01/03 18:13:11 025 [debug] : ---------------------------------------
+23/01/03 18:13:11 025 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:13:11 026 [debug] : ---------------------------------------
+23/01/03 18:14:22 339 [debug] : ---------------------------------------
+23/01/03 18:14:22 342 [debug] : |         Start Express Server         |
+23/01/03 18:14:22 342 [debug] : ---------------------------------------
+23/01/03 18:14:22 344 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:14:22 345 [debug] : ---------------------------------------
+23/01/03 18:17:35 747 [debug] : ---------------------------------------
+23/01/03 18:17:35 752 [debug] : |         Start Express Server         |
+23/01/03 18:17:35 753 [debug] : ---------------------------------------
+23/01/03 18:17:35 755 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:17:35 756 [debug] : ---------------------------------------
+23/01/03 18:18:42 481 [debug] : ---------------------------------------
+23/01/03 18:18:42 487 [debug] : |         Start Express Server         |
+23/01/03 18:18:42 488 [debug] : ---------------------------------------
+23/01/03 18:18:42 488 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:18:42 489 [debug] : ---------------------------------------
+23/01/03 18:19:51 532 [debug] : ---------------------------------------
+23/01/03 18:19:51 541 [debug] : |         Start Express Server         |
+23/01/03 18:19:51 542 [debug] : ---------------------------------------
+23/01/03 18:19:51 542 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:19:51 547 [debug] : ---------------------------------------
+23/01/03 18:22:09 227 [debug] : ---------------------------------------
+23/01/03 18:22:09 231 [debug] : |         Start Express Server         |
+23/01/03 18:22:09 232 [debug] : ---------------------------------------
+23/01/03 18:22:09 232 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:22:09 233 [debug] : ---------------------------------------
+23/01/03 18:22:23 178 [debug] : ---------------------------------------
+23/01/03 18:22:23 189 [debug] : |         Start Express Server         |
+23/01/03 18:22:23 190 [debug] : ---------------------------------------
+23/01/03 18:22:23 191 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:22:23 192 [debug] : ---------------------------------------
+23/01/03 18:22:26 613 [debug] : ---------------------------------------
+23/01/03 18:22:26 708 [debug] : |         Start Express Server         |
+23/01/03 18:22:26 714 [debug] : ---------------------------------------
+23/01/03 18:22:26 716 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:22:26 730 [debug] : ---------------------------------------
+23/01/03 18:22:33 417 [debug] : ---------------------------------------
+23/01/03 18:22:33 422 [debug] : |         Start Express Server         |
+23/01/03 18:22:33 422 [debug] : ---------------------------------------
+23/01/03 18:22:33 428 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:22:33 432 [debug] : ---------------------------------------
+23/01/03 18:22:38 733 [debug] : ---------------------------------------
+23/01/03 18:22:38 757 [debug] : |         Start Express Server         |
+23/01/03 18:22:38 759 [debug] : ---------------------------------------
+23/01/03 18:22:38 761 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:22:38 763 [debug] : ---------------------------------------
+23/01/03 18:22:59 965 [debug] : ---------------------------------------
+23/01/03 18:22:59 970 [debug] : |         Start Express Server         |
+23/01/03 18:22:59 971 [debug] : ---------------------------------------
+23/01/03 18:22:59 971 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:22:59 972 [debug] : ---------------------------------------
+23/01/03 18:27:26 032 [debug] : ---------------------------------------
+23/01/03 18:27:26 036 [debug] : |         Start Express Server         |
+23/01/03 18:27:26 036 [debug] : ---------------------------------------
+23/01/03 18:27:26 037 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:27:26 037 [debug] : ---------------------------------------
+23/01/03 18:29:05 650 [debug] : ---------------------------------------
+23/01/03 18:29:05 655 [debug] : |         Start Express Server         |
+23/01/03 18:29:05 655 [debug] : ---------------------------------------
+23/01/03 18:29:05 656 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:29:05 656 [debug] : ---------------------------------------
+23/01/03 18:29:34 773 [debug] : ---------------------------------------
+23/01/03 18:29:34 777 [debug] : |         Start Express Server         |
+23/01/03 18:29:34 777 [debug] : ---------------------------------------
+23/01/03 18:29:34 778 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:29:34 778 [debug] : ---------------------------------------
+23/01/03 18:29:58 799 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:29:58 801 [debug] : [GET] http://192.168.1.106:3001/professor/1
+23/01/03 18:29:58 802 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:29:58 808 [error] : ReferenceError: name is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:55:25
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+23/01/03 18:29:58 814 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/01/03 18:29:58 815 [debug] : ---------------------------------------
+23/01/03 18:30:34 821 [debug] : ---------------------------------------
+23/01/03 18:30:34 825 [debug] : |         Start Express Server         |
+23/01/03 18:30:34 826 [debug] : ---------------------------------------
+23/01/03 18:30:34 828 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:30:34 831 [debug] : ---------------------------------------
+23/01/03 18:30:38 695 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:30:38 697 [debug] : [GET] http://192.168.1.106:3001/professor/1
+23/01/03 18:30:38 697 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:30:38 824 [info] :  >> DATABASE 접속됨 [threadId=154]
+23/01/03 18:30:38 825 [info] :  >> Connection 임대됨 [threadId=154]
+23/01/03 18:30:38 829 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='1';
+23/01/03 18:30:38 837 [info] :  >> Connection 반납됨 [threadId=154]
+23/01/03 18:30:38 838 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at ProfessorService.getItem (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:54:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:76:14
+23/01/03 18:30:38 847 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 151ms
+23/01/03 18:30:38 849 [debug] : ---------------------------------------
+23/01/03 18:30:48 992 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:30:48 992 [debug] : [GET] http://192.168.1.106:3001/professor/
+23/01/03 18:30:48 993 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:30:48 995 [info] :  >> Connection 임대됨 [threadId=154]
+23/01/03 18:30:48 999 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 18:30:49 018 [info] :  >> Connection 반납됨 [threadId=154]
+23/01/03 18:30:49 134 [info] :  >> Connection 임대됨 [threadId=154]
+23/01/03 18:30:49 140 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 0, 5
+23/01/03 18:30:49 145 [info] :  >> Connection 반납됨 [threadId=154]
+23/01/03 18:30:49 149 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 157ms
+23/01/03 18:30:49 152 [debug] : ---------------------------------------
+23/01/03 18:30:55 040 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:30:55 041 [debug] : [GET] http://192.168.1.106:3001/professor/9931
+23/01/03 18:30:55 041 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:30:55 042 [info] :  >> Connection 임대됨 [threadId=154]
+23/01/03 18:30:55 043 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9931';
+23/01/03 18:30:55 044 [info] :  >> Connection 반납됨 [threadId=154]
+23/01/03 18:30:55 047 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/01/03 18:30:55 047 [debug] : ---------------------------------------
+23/01/03 18:31:08 201 [debug] : ---------------------------------------
+23/01/03 18:31:08 205 [debug] : |         Start Express Server         |
+23/01/03 18:31:08 205 [debug] : ---------------------------------------
+23/01/03 18:31:08 206 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:31:08 206 [debug] : ---------------------------------------
+23/01/03 18:32:37 354 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:32:37 355 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 18:32:37 356 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:32:37 394 [error] : ReferenceError: loc is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:103:14
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:47:12)
+23/01/03 18:32:37 406 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 51ms
+23/01/03 18:32:37 406 [debug] : ---------------------------------------
+23/01/03 18:34:23 709 [debug] : ---------------------------------------
+23/01/03 18:34:23 713 [debug] : |         Start Express Server         |
+23/01/03 18:34:23 713 [debug] : ---------------------------------------
+23/01/03 18:34:23 714 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:34:23 714 [debug] : ---------------------------------------
+23/01/03 18:34:24 547 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:34:24 549 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 18:34:24 549 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:34:24 574 [error] : ReferenceError: profno is not defined
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:102:17
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:47:12)
+23/01/03 18:34:24 614 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 66ms
+23/01/03 18:34:24 619 [debug] : ---------------------------------------
+23/01/03 18:34:39 215 [debug] : ---------------------------------------
+23/01/03 18:34:39 218 [debug] : |         Start Express Server         |
+23/01/03 18:34:39 218 [debug] : ---------------------------------------
+23/01/03 18:34:39 219 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:34:39 219 [debug] : ---------------------------------------
+23/01/03 18:34:39 979 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:34:40 036 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 18:34:40 039 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:34:40 134 [info] :  >> DATABASE 접속됨 [threadId=158]
+23/01/03 18:34:40 134 [info] :  >> Connection 임대됨 [threadId=158]
+23/01/03 18:34:40 139 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('추가테스트', 'testid', '부교수', '300', '2022/01/01', '30', '201');
+23/01/03 18:34:40 146 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9932';
+23/01/03 18:34:40 153 [info] :  >> Connection 반납됨 [threadId=158]
+23/01/03 18:34:40 161 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 181ms
+23/01/03 18:34:40 162 [debug] : ---------------------------------------
+23/01/03 18:36:21 268 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:36:21 269 [debug] : [PUT] http://192.168.1.106:3001/professor
+23/01/03 18:36:21 270 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:36:21 273 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/app.js:156:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+23/01/03 18:36:21 275 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/01/03 18:36:21 275 [debug] : ---------------------------------------
+23/01/03 18:36:45 950 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:36:45 950 [debug] : [PUT] http://192.168.1.106:3001/professor/9932
+23/01/03 18:36:45 950 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:36:45 952 [error] : BadRequestException: 교수번호를 입력하세요.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:125:19
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+23/01/03 18:36:45 954 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/01/03 18:36:45 954 [debug] : ---------------------------------------
+23/01/03 18:37:07 803 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:37:07 803 [debug] : [PUT] http://192.168.1.106:3001/professor/9932
+23/01/03 18:37:07 803 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:37:07 805 [error] : BadRequestException: 교수번호를 입력하세요.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:125:19
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+23/01/03 18:37:07 807 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/01/03 18:37:07 808 [debug] : ---------------------------------------
+23/01/03 18:37:27 725 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:37:27 725 [debug] : [PUT] http://192.168.1.106:3001/professor/9929
+23/01/03 18:37:27 726 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:37:27 727 [error] : BadRequestException: 교수번호를 입력하세요.
+    at RegexHelper.value (/Users/jiin/Desktop/web/ezen/NodeJS/helper/RegexHelper.js:22:19)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:125:19
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+23/01/03 18:37:27 728 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/01/03 18:37:27 729 [debug] : ---------------------------------------
+23/01/03 18:37:47 059 [debug] : ---------------------------------------
+23/01/03 18:37:47 062 [debug] : |         Start Express Server         |
+23/01/03 18:37:47 063 [debug] : ---------------------------------------
+23/01/03 18:37:47 064 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:37:47 064 [debug] : ---------------------------------------
+23/01/03 18:37:51 633 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:37:51 635 [debug] : [PUT] http://192.168.1.106:3001/professor/9929
+23/01/03 18:37:51 635 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:37:51 718 [info] :  >> DATABASE 접속됨 [threadId=160]
+23/01/03 18:37:51 719 [info] :  >> Connection 임대됨 [threadId=160]
+23/01/03 18:37:51 729 [info] :  >> Connection 반납됨 [threadId=160]
+23/01/03 18:37:51 731 [error] : Error: Parameter #{profno} is not converted.
+    at MybatisMapper.getStatement (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/mybatis-mapper/index.js:103:15)
+    at ProfessorService.editItem (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:110:37)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:148:14
+23/01/03 18:37:51 749 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 115ms
+23/01/03 18:37:51 751 [debug] : ---------------------------------------
+23/01/03 18:38:33 086 [debug] : ---------------------------------------
+23/01/03 18:38:33 089 [debug] : |         Start Express Server         |
+23/01/03 18:38:33 089 [debug] : ---------------------------------------
+23/01/03 18:38:33 090 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:38:33 090 [debug] : ---------------------------------------
+23/01/03 18:38:35 201 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:38:35 202 [debug] : [PUT] http://192.168.1.106:3001/professor/9929
+23/01/03 18:38:35 203 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:38:35 272 [info] :  >> DATABASE 접속됨 [threadId=162]
+23/01/03 18:38:35 275 [info] :  >> Connection 임대됨 [threadId=162]
+23/01/03 18:38:35 281 [debug] : UPDATE professor SET name='수정테스트', userid='testid', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='201'  WHERE profno='9929';
+23/01/03 18:38:35 299 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9929';
+23/01/03 18:38:35 307 [info] :  >> Connection 반납됨 [threadId=162]
+23/01/03 18:38:35 337 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 135ms
+23/01/03 18:38:35 339 [debug] : ---------------------------------------
+23/01/03 18:38:43 637 [debug] : ---------------------------------------
+23/01/03 18:38:43 697 [debug] : |         Start Express Server         |
+23/01/03 18:38:43 698 [debug] : ---------------------------------------
+23/01/03 18:38:43 699 [debug] : server address => http://192.168.1.106:3001
+23/01/03 18:38:43 700 [debug] : ---------------------------------------
+23/01/03 18:38:45 005 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:38:45 006 [debug] : [PUT] http://192.168.1.106:3001/professor/9929
+23/01/03 18:38:45 007 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:38:45 053 [info] :  >> DATABASE 접속됨 [threadId=164]
+23/01/03 18:38:45 054 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:38:45 058 [debug] : UPDATE professor SET name='수정테스트', userid='testid', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='201'  WHERE profno='9929';
+23/01/03 18:38:45 062 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9929';
+23/01/03 18:38:45 070 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:38:45 075 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 70ms
+23/01/03 18:38:45 075 [debug] : ---------------------------------------
+23/01/03 18:38:52 282 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:38:52 283 [debug] : [PUT] http://192.168.1.106:3001/professor/
+23/01/03 18:38:52 283 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:38:52 286 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/app.js:156:48
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+23/01/03 18:38:52 287 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/01/03 18:38:52 288 [debug] : ---------------------------------------
+23/01/03 18:38:57 442 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:38:57 443 [debug] : [PUT] http://192.168.1.106:3001/professor/9929
+23/01/03 18:38:57 443 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:38:57 445 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:38:57 447 [debug] : UPDATE professor SET name='수정테스트', userid='testid', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='201'  WHERE profno='9929';
+23/01/03 18:38:57 459 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9929';
+23/01/03 18:38:57 551 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:38:57 553 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 111ms
+23/01/03 18:38:57 554 [debug] : ---------------------------------------
+23/01/03 18:42:01 730 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:42:01 730 [debug] : [DELETE] http://192.168.1.106:3001/professor/9929
+23/01/03 18:42:01 730 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:42:01 732 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:42:01 733 [debug] : DELETE FROM student WHERE profno='9929';
+23/01/03 18:42:01 745 [debug] : DELETE FROM professor WHERE profno='9929'
+23/01/03 18:42:01 750 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:42:01 751 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+23/01/03 18:42:01 751 [debug] : ---------------------------------------
+23/01/03 18:46:59 177 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:46:59 178 [debug] : [DELETE] http://192.168.1.106:3001/professor/9932
+23/01/03 18:46:59 178 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:46:59 179 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:46:59 179 [debug] : DELETE FROM student WHERE profno='9932';
+23/01/03 18:46:59 185 [debug] : DELETE FROM professor WHERE profno='9932'
+23/01/03 18:46:59 190 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:46:59 192 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+23/01/03 18:46:59 192 [debug] : ---------------------------------------
+23/01/03 18:57:08 673 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:57:08 674 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 18:57:08 674 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:57:08 677 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:57:08 678 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('장원영', 'lovedive', '교수', '300', '2020-12-01', '10', '102');
+23/01/03 18:57:08 685 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9933';
+23/01/03 18:57:08 686 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:57:08 690 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+23/01/03 18:57:08 690 [debug] : ---------------------------------------
+23/01/03 18:57:51 508 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:57:51 509 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 18:57:51 509 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:57:51 510 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:57:51 511 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('김민지', 'NewJeans', '부교수', '500', '2019-12-01', '20', '103');
+23/01/03 18:57:51 513 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9934';
+23/01/03 18:57:51 514 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:57:51 516 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/01/03 18:57:51 516 [debug] : ---------------------------------------
+23/01/03 18:58:39 843 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:58:39 843 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 18:58:39 844 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:58:39 845 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:58:39 845 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('이혜인', 'ditto', '부교수', '400', '2016-12-01', '20', '306');
+23/01/03 18:58:39 848 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9935';
+23/01/03 18:58:39 851 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:58:39 856 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/01/03 18:58:39 857 [debug] : ---------------------------------------
+23/01/03 18:59:39 263 [debug] : 클라이언트가 접속했습니다.
+23/01/03 18:59:39 263 [debug] : [PUT] http://192.168.1.106:3001/professor/9927
+23/01/03 18:59:39 263 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 18:59:39 265 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 18:59:39 265 [debug] : UPDATE professor SET name='김채원', userid='lesserafim', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='201'  WHERE profno='9927';
+23/01/03 18:59:39 268 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9927';
+23/01/03 18:59:39 270 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 18:59:39 271 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/01/03 18:59:39 272 [debug] : ---------------------------------------
+23/01/03 19:00:19 889 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:00:19 890 [debug] : [PUT] http://192.168.1.106:3001/professor/9928
+23/01/03 19:00:19 890 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:00:19 891 [info] :  >> Connection 임대됨 [threadId=164]
+23/01/03 19:00:19 892 [debug] : UPDATE professor SET name='허윤진', userid='fearless', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='201'  WHERE profno='9928';
+23/01/03 19:00:19 896 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9928';
+23/01/03 19:00:19 902 [info] :  >> Connection 반납됨 [threadId=164]
+23/01/03 19:00:19 910 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+23/01/03 19:00:19 911 [debug] : ---------------------------------------
+23/01/03 19:05:33 423 [debug] : ---------------------------------------
+23/01/03 19:05:33 428 [debug] : |         Start Express Server         |
+23/01/03 19:05:33 431 [debug] : ---------------------------------------
+23/01/03 19:05:33 434 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:05:33 461 [debug] : ---------------------------------------
+23/01/03 19:06:01 281 [debug] : ---------------------------------------
+23/01/03 19:06:01 284 [debug] : |         Start Express Server         |
+23/01/03 19:06:01 285 [debug] : ---------------------------------------
+23/01/03 19:06:01 285 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:06:01 286 [debug] : ---------------------------------------
+23/01/03 19:07:50 816 [debug] : ---------------------------------------
+23/01/03 19:07:50 820 [debug] : |         Start Express Server         |
+23/01/03 19:07:50 821 [debug] : ---------------------------------------
+23/01/03 19:07:50 821 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:07:50 822 [debug] : ---------------------------------------
+23/01/03 19:08:12 053 [debug] : ---------------------------------------
+23/01/03 19:08:12 057 [debug] : |         Start Express Server         |
+23/01/03 19:08:12 058 [debug] : ---------------------------------------
+23/01/03 19:08:12 061 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:08:12 062 [debug] : ---------------------------------------
+23/01/03 19:09:22 427 [debug] : ---------------------------------------
+23/01/03 19:09:22 483 [debug] : |         Start Express Server         |
+23/01/03 19:09:22 485 [debug] : ---------------------------------------
+23/01/03 19:09:22 488 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:09:22 505 [debug] : ---------------------------------------
+23/01/03 19:09:52 095 [debug] : ---------------------------------------
+23/01/03 19:09:52 097 [debug] : |         Start Express Server         |
+23/01/03 19:09:52 098 [debug] : ---------------------------------------
+23/01/03 19:09:52 098 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:09:52 098 [debug] : ---------------------------------------
+23/01/03 19:10:27 114 [debug] : ---------------------------------------
+23/01/03 19:10:27 118 [debug] : |         Start Express Server         |
+23/01/03 19:10:27 119 [debug] : ---------------------------------------
+23/01/03 19:10:27 121 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:10:27 122 [debug] : ---------------------------------------
+23/01/03 19:11:28 550 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:11:28 552 [debug] : [GET] http://192.168.1.106:3001/professor/9932
+23/01/03 19:11:28 552 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:11:28 617 [info] :  >> DATABASE 접속됨 [threadId=172]
+23/01/03 19:11:28 619 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:11:28 623 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9932';
+23/01/03 19:11:28 638 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:11:28 643 [error] : RuntimeException: 조회된 데이터가 없습니다.
+    at ProfessorService.getItem (/Users/jiin/Desktop/web/ezen/NodeJS/14-Test/service/ProfessorService.js:59:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async /Users/jiin/Desktop/web/ezen/NodeJS/14-Test/controllers/ProfessorController.js:68:14
+23/01/03 19:11:28 687 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 136ms
+23/01/03 19:11:28 702 [debug] : ---------------------------------------
+23/01/03 19:11:42 423 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:11:42 425 [debug] : [GET] http://192.168.1.106:3001/professor/9902
+23/01/03 19:11:42 425 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:11:42 432 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:11:42 434 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9902';
+23/01/03 19:11:42 439 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:11:42 445 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 21ms
+23/01/03 19:11:42 446 [debug] : ---------------------------------------
+23/01/03 19:12:41 456 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:12:41 456 [debug] : [GET] http://192.168.1.106:3001/professor/?query&page=1&rows=3
+23/01/03 19:12:41 457 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:12:41 459 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:12:41 461 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 19:12:41 511 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:12:41 512 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:12:41 514 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 0, 3
+23/01/03 19:12:41 529 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:12:41 530 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 74ms
+23/01/03 19:12:41 534 [debug] : ---------------------------------------
+23/01/03 19:13:02 621 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:13:02 622 [debug] : [GET] http://192.168.1.106:3001/professor/?query&page=3&rows=3
+23/01/03 19:13:02 622 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:13:02 623 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:02 624 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 19:13:02 627 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:02 628 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:02 629 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 6, 3
+23/01/03 19:13:02 630 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:02 632 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/01/03 19:13:02 632 [debug] : ---------------------------------------
+23/01/03 19:13:10 511 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:13:10 513 [debug] : [GET] http://192.168.1.106:3001/professor/?query&page=3&rows=5
+23/01/03 19:13:10 514 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:13:10 515 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:10 516 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 19:13:10 527 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:10 527 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:10 528 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 10, 5
+23/01/03 19:13:10 531 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:10 532 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 19ms
+23/01/03 19:13:10 532 [debug] : ---------------------------------------
+23/01/03 19:13:26 088 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:13:26 089 [debug] : [GET] http://192.168.1.106:3001/professor/?page=3&rows=5
+23/01/03 19:13:26 089 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:13:26 090 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:26 091 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 19:13:26 098 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:26 099 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:26 101 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 10, 5
+23/01/03 19:13:26 104 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:26 105 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+23/01/03 19:13:26 105 [debug] : ---------------------------------------
+23/01/03 19:13:35 007 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:13:35 007 [debug] : [GET] http://192.168.1.106:3001/professor/?page=2&rows=5
+23/01/03 19:13:35 007 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:13:35 009 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:35 010 [debug] : SELECT COUNT(*) AS cnt FROM professor
+23/01/03 19:13:35 034 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:35 034 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:13:35 035 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  ORDER BY profno DESC  LIMIT 5, 5
+23/01/03 19:13:35 039 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:13:35 040 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/01/03 19:13:35 040 [debug] : ---------------------------------------
+23/01/03 19:14:08 717 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:14:08 718 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수&page=1&rows=3
+23/01/03 19:14:08 718 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:14:08 719 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:14:08 723 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 19:14:08 726 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:14:08 726 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:14:08 728 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 3
+23/01/03 19:14:08 730 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:14:08 730 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/01/03 19:14:08 731 [debug] : ---------------------------------------
+23/01/03 19:14:25 841 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:14:25 842 [debug] : [GET] http://192.168.1.106:3001/professor/?query=강사&page=1&rows=3
+23/01/03 19:14:25 842 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:14:25 845 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:14:25 846 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '강사', '%')  OR userid LIKE concat('%', '강사', '%')  OR position LIKE concat('%', '강사', '%')  OR sal LIKE concat('%', '강사', '%')  OR hiredate LIKE concat('%', '강사', '%')  OR deptno LIKE concat('%', '강사', '%')
+23/01/03 19:14:25 847 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:14:25 848 [info] :  >> Connection 임대됨 [threadId=172]
+23/01/03 19:14:25 849 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '강사', '%')  OR userid LIKE concat('%', '강사', '%')  OR position LIKE concat('%', '강사', '%')  OR sal LIKE concat('%', '강사', '%')  OR hiredate LIKE concat('%', '강사', '%')  ORDER BY profno DESC  LIMIT 0, 3
+23/01/03 19:14:25 852 [info] :  >> Connection 반납됨 [threadId=172]
+23/01/03 19:14:25 853 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/01/03 19:14:25 853 [debug] : ---------------------------------------
+23/01/03 19:24:22 350 [debug] : ---------------------------------------
+23/01/03 19:24:22 361 [debug] : |         Start Express Server         |
+23/01/03 19:24:22 361 [debug] : ---------------------------------------
+23/01/03 19:24:22 362 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:24:22 364 [debug] : ---------------------------------------
+23/01/03 19:31:58 898 [debug] : ---------------------------------------
+23/01/03 19:31:58 902 [debug] : |         Start Express Server         |
+23/01/03 19:31:58 902 [debug] : ---------------------------------------
+23/01/03 19:31:58 903 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:31:58 903 [debug] : ---------------------------------------
+23/01/03 19:39:29 707 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:39:29 710 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 19:39:29 711 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:39:29 875 [info] :  >> DATABASE 접속됨 [threadId=175]
+23/01/03 19:39:29 876 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:39:29 880 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('강해린', 'attention', '전임강사', '500', '2017-12-01', '50', '317');
+23/01/03 19:39:29 892 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9936';
+23/01/03 19:39:29 900 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:39:29 963 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 254ms
+23/01/03 19:39:29 970 [debug] : ---------------------------------------
+23/01/03 19:41:37 292 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:41:37 292 [debug] : [PUT] http://192.168.1.106:3001/professor/9936
+23/01/03 19:41:37 292 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:41:37 295 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:41:37 297 [debug] : UPDATE professor SET name='김수정', userid='put', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='201'  WHERE profno='9936';
+23/01/03 19:41:37 303 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9936';
+23/01/03 19:41:37 306 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:41:37 307 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+23/01/03 19:41:37 307 [debug] : ---------------------------------------
+23/01/03 19:42:22 043 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:42:22 043 [debug] : [DELETE] http://192.168.1.106:3001/professor/9936
+23/01/03 19:42:22 043 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:42:22 045 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:42:22 046 [debug] : DELETE FROM student WHERE profno='9936';
+23/01/03 19:42:22 048 [debug] : DELETE FROM professor WHERE profno='9936'
+23/01/03 19:42:22 053 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:42:22 055 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/01/03 19:42:22 055 [debug] : ---------------------------------------
+23/01/03 19:43:26 883 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:43:26 883 [debug] : [POST] http://192.168.1.106:3001/professor
+23/01/03 19:43:26 883 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:43:26 885 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:43:26 886 [debug] : INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES ('강해린', 'attention', '전임강사', '500', '2017-12-01', '50', '317');
+23/01/03 19:43:26 890 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9937';
+23/01/03 19:43:26 892 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:43:26 893 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/01/03 19:43:26 893 [debug] : ---------------------------------------
+23/01/03 19:44:16 120 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:44:16 120 [debug] : [PUT] http://192.168.1.106:3001/professor/9937
+23/01/03 19:44:16 120 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:44:16 122 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:44:16 123 [debug] : UPDATE professor SET name='김수정', userid='put', position='강사', sal='300', hiredate='2022/01/01', comm='30', deptno='102'  WHERE profno='9937';
+23/01/03 19:44:16 130 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9937';
+23/01/03 19:44:16 132 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:44:16 133 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/01/03 19:44:16 133 [debug] : ---------------------------------------
+23/01/03 19:44:45 395 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:44:45 395 [debug] : [DELETE] http://192.168.1.106:3001/professor/9937
+23/01/03 19:44:45 395 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:44:45 396 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:44:45 397 [debug] : DELETE FROM student WHERE profno='9937';
+23/01/03 19:44:45 403 [debug] : DELETE FROM professor WHERE profno='9937'
+23/01/03 19:44:45 407 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:44:45 408 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/01/03 19:44:45 409 [debug] : ---------------------------------------
+23/01/03 19:45:50 470 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:45:50 470 [debug] : [GET] http://192.168.1.106:3001/professor/9902
+23/01/03 19:45:50 471 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:45:50 474 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:45:50 477 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE profno='9902';
+23/01/03 19:45:50 479 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:45:50 480 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/01/03 19:45:50 480 [debug] : ---------------------------------------
+23/01/03 19:46:27 692 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:46:27 693 [debug] : [GET] http://192.168.1.106:3001/professor/?query=강사&page=1&rows=3
+23/01/03 19:46:27 693 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:46:27 695 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:46:27 698 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '강사', '%')  OR userid LIKE concat('%', '강사', '%')  OR position LIKE concat('%', '강사', '%')  OR sal LIKE concat('%', '강사', '%')  OR hiredate LIKE concat('%', '강사', '%')  OR deptno LIKE concat('%', '강사', '%')
+23/01/03 19:46:27 699 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:46:27 699 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:46:27 703 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '강사', '%')  OR userid LIKE concat('%', '강사', '%')  OR position LIKE concat('%', '강사', '%')  OR sal LIKE concat('%', '강사', '%')  OR hiredate LIKE concat('%', '강사', '%')  ORDER BY profno DESC  LIMIT 0, 3
+23/01/03 19:46:27 706 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:46:27 707 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+23/01/03 19:46:27 707 [debug] : ---------------------------------------
+23/01/03 19:46:53 857 [debug] : 클라이언트가 접속했습니다.
+23/01/03 19:46:53 858 [debug] : [GET] http://192.168.1.106:3001/professor/?query=교수&page=2&rows=3
+23/01/03 19:46:53 858 [debug] : [client] ::ffff:192.168.1.106 / unknown / insomnia 2022.7.0 / unknown
+23/01/03 19:46:53 860 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:46:53 861 [debug] : SELECT COUNT(*) AS cnt FROM professor  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  OR deptno LIKE concat('%', '교수', '%')
+23/01/03 19:46:53 862 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:46:53 862 [info] :  >> Connection 임대됨 [threadId=175]
+23/01/03 19:46:53 864 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno  WHERE  name LIKE concat('%', '교수', '%')  OR userid LIKE concat('%', '교수', '%')  OR position LIKE concat('%', '교수', '%')  OR sal LIKE concat('%', '교수', '%')  OR hiredate LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 3, 3
+23/01/03 19:46:53 866 [info] :  >> Connection 반납됨 [threadId=175]
+23/01/03 19:46:53 869 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/01/03 19:46:53 869 [debug] : ---------------------------------------
+23/01/03 19:51:57 496 [debug] : ---------------------------------------
+23/01/03 19:51:57 499 [debug] : |         Start Express Server         |
+23/01/03 19:51:57 500 [debug] : ---------------------------------------
+23/01/03 19:51:57 500 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:51:57 501 [debug] : ---------------------------------------
+23/01/03 19:59:51 886 [debug] : ---------------------------------------
+23/01/03 19:59:51 889 [debug] : |         Start Express Server         |
+23/01/03 19:59:51 889 [debug] : ---------------------------------------
+23/01/03 19:59:51 890 [debug] : server address => http://192.168.1.106:3001
+23/01/03 19:59:51 890 [debug] : ---------------------------------------
+23/01/03 20:00:31 655 [debug] : ---------------------------------------
+23/01/03 20:00:31 659 [debug] : |         Start Express Server         |
+23/01/03 20:00:31 659 [debug] : ---------------------------------------
+23/01/03 20:00:31 660 [debug] : server address => http://192.168.1.106:3001
+23/01/03 20:00:31 660 [debug] : ---------------------------------------
+23/01/03 20:00:53 750 [debug] : ---------------------------------------
+23/01/03 20:00:53 754 [debug] : |         Start Express Server         |
+23/01/03 20:00:53 755 [debug] : ---------------------------------------
+23/01/03 20:00:53 755 [debug] : server address => http://192.168.1.106:3001
+23/01/03 20:00:53 755 [debug] : ---------------------------------------
+23/01/03 20:07:46 080 [debug] : ---------------------------------------
+23/01/03 20:07:46 085 [debug] : |         Start Express Server         |
+23/01/03 20:07:46 085 [debug] : ---------------------------------------
+23/01/03 20:07:46 086 [debug] : server address => http://192.168.1.106:3001
+23/01/03 20:07:46 086 [debug] : ---------------------------------------

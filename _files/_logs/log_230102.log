@@ -1,0 +1,112 @@
+23/01/02 13:04:14 107 [debug] : ---------------------------------------
+23/01/02 13:04:14 110 [debug] : |         Start Express Server         |
+23/01/02 13:04:14 111 [debug] : ---------------------------------------
+23/01/02 13:04:14 111 [debug] : server address => http://192.168.1.106:3001
+23/01/02 13:04:14 111 [debug] : ---------------------------------------
+23/01/02 13:04:19 714 [debug] : 클라이언트가 접속했습니다.
+23/01/02 13:04:19 718 [debug] : [GET] http://192.168.1.106:3001/
+23/01/02 13:04:19 718 [debug] : [client] ::ffff:192.168.1.106 / OS X / Chrome 108.0.0.0 / Apple Mac
+23/01/02 13:04:19 733 [error] : PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at /Users/jiin/Desktop/web/ezen/NodeJS/10-Express/app.js:713:52
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+    at /Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:286:9
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:421:3)
+    at next (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/jiin/Desktop/web/ezen/NodeJS/node_modules/express/lib/router/index.js:328:13)
+23/01/02 13:04:19 747 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/01/02 13:04:19 747 [debug] : ---------------------------------------
+23/01/02 13:04:20 283 [debug] : 클라이언트가 접속했습니다.
+23/01/02 13:04:20 284 [debug] : [GET] http://192.168.1.106:3001/favicon.ico
+23/01/02 13:04:20 284 [debug] : [client] ::ffff:192.168.1.106 / OS X / Chrome 108.0.0.0 / Apple Mac
+23/01/02 13:04:20 293 [debug] : 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/01/02 13:04:20 294 [debug] : ---------------------------------------
+23/01/02 22:43:20 410 [info] :  >> DATABASE 접속됨 [threadId=9]
+23/01/02 22:43:20 413 [info] :  >> Connection 임대됨 [threadId=9]
+23/01/02 22:43:20 417 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='201';
+23/01/02 22:43:20 437 [debug] : SELECT deptno, dname, loc FROM department  WHERE  dname LIKE concat('%', '풀스택', '%')  ORDER BY deptno DESC  LIMIT 0, 3
+23/01/02 22:43:20 448 [debug] : INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+23/01/02 22:43:20 523 [debug] : DELETE FROM department WHERE deptno='300'
+23/01/02 22:43:20 539 [debug] : UPDATE department SET dname='수정된학과', loc='수정된위치'  WHERE deptno='300';
+23/01/02 22:43:20 555 [debug] : SELECT COUNT(*) AS cnt FROM department
+23/01/02 22:43:20 588 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname, loc  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/02 22:43:20 605 [info] :  >> Connection 반납됨 [threadId=9]
+23/01/02 22:44:25 087 [info] :  >> DATABASE 접속됨 [threadId=10]
+23/01/02 22:44:25 090 [info] :  >> Connection 임대됨 [threadId=10]
+23/01/02 22:46:27 199 [info] :  >> DATABASE 접속됨 [threadId=11]
+23/01/02 22:46:27 203 [info] :  >> Connection 임대됨 [threadId=11]
+23/01/02 22:46:32 032 [info] :  >> DATABASE 접속됨 [threadId=12]
+23/01/02 22:46:32 037 [info] :  >> Connection 임대됨 [threadId=12]
+23/01/02 23:15:20 315 [info] :  >> DATABASE 접속됨 [threadId=13]
+23/01/02 23:15:20 321 [info] :  >> Connection 임대됨 [threadId=13]
+23/01/02 23:16:02 091 [info] :  >> DATABASE 접속됨 [threadId=14]
+23/01/02 23:16:02 096 [info] :  >> Connection 임대됨 [threadId=14]
+23/01/02 23:18:51 729 [info] :  >> DATABASE 접속됨 [threadId=15]
+23/01/02 23:18:51 736 [info] :  >> Connection 임대됨 [threadId=15]
+23/01/02 23:19:25 835 [info] :  >> DATABASE 접속됨 [threadId=16]
+23/01/02 23:19:25 838 [info] :  >> Connection 임대됨 [threadId=16]
+23/01/02 23:20:15 777 [info] :  >> DATABASE 접속됨 [threadId=17]
+23/01/02 23:20:15 780 [info] :  >> Connection 임대됨 [threadId=17]
+23/01/02 23:21:55 155 [info] :  >> DATABASE 접속됨 [threadId=18]
+23/01/02 23:21:55 157 [info] :  >> Connection 임대됨 [threadId=18]
+23/01/02 23:23:58 415 [info] :  >> DATABASE 접속됨 [threadId=19]
+23/01/02 23:23:58 419 [info] :  >> Connection 임대됨 [threadId=19]
+23/01/02 23:24:40 467 [info] :  >> DATABASE 접속됨 [threadId=20]
+23/01/02 23:24:40 474 [info] :  >> Connection 임대됨 [threadId=20]
+23/01/02 23:24:58 266 [info] :  >> DATABASE 접속됨 [threadId=21]
+23/01/02 23:24:58 271 [info] :  >> Connection 임대됨 [threadId=21]
+23/01/02 23:25:20 735 [info] :  >> DATABASE 접속됨 [threadId=22]
+23/01/02 23:25:20 738 [info] :  >> Connection 임대됨 [threadId=22]
+23/01/02 23:25:30 208 [info] :  >> DATABASE 접속됨 [threadId=23]
+23/01/02 23:25:30 211 [info] :  >> Connection 임대됨 [threadId=23]
+23/01/02 23:26:01 044 [info] :  >> DATABASE 접속됨 [threadId=24]
+23/01/02 23:26:01 047 [info] :  >> Connection 임대됨 [threadId=24]
+23/01/02 23:26:23 111 [info] :  >> DATABASE 접속됨 [threadId=25]
+23/01/02 23:26:23 115 [info] :  >> Connection 임대됨 [threadId=25]
+23/01/02 23:29:53 198 [info] :  >> DATABASE 접속됨 [threadId=26]
+23/01/02 23:29:53 202 [info] :  >> Connection 임대됨 [threadId=26]
+23/01/02 23:31:13 965 [info] :  >> DATABASE 접속됨 [threadId=27]
+23/01/02 23:31:13 968 [info] :  >> Connection 임대됨 [threadId=27]
+23/01/02 23:32:22 456 [info] :  >> DATABASE 접속됨 [threadId=28]
+23/01/02 23:32:22 459 [info] :  >> Connection 임대됨 [threadId=28]
+23/01/02 23:32:22 462 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='201';
+23/01/02 23:32:22 501 [debug] : SELECT deptno, dname, loc FROM department  WHERE  dname LIKE concat('%', '풀스택', '%')  ORDER BY deptno DESC  LIMIT 0, 3
+23/01/02 23:32:22 505 [debug] : INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+23/01/02 23:32:22 519 [debug] : DELETE FROM department WHERE deptno='300'
+23/01/02 23:32:22 534 [debug] : UPDATE department SET dname='수정된학과', loc='수정된위치'  WHERE deptno='300';
+23/01/02 23:32:22 539 [debug] : SELECT COUNT(*) AS cnt FROM department
+23/01/02 23:32:22 550 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname, loc  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/02 23:32:22 560 [info] :  >> Connection 반납됨 [threadId=28]
+23/01/02 23:32:50 967 [info] :  >> DATABASE 접속됨 [threadId=29]
+23/01/02 23:32:50 970 [info] :  >> Connection 임대됨 [threadId=29]
+23/01/02 23:32:50 975 [debug] : SELECT deptno, dname, loc FROM department WHERE deptno='201';
+23/01/02 23:32:50 989 [debug] : SELECT deptno, dname, loc FROM department  WHERE  dname LIKE concat('%', '풀스택', '%')  ORDER BY deptno DESC  LIMIT 0, 3
+23/01/02 23:32:50 993 [debug] : INSERT INTO department (dname, loc) VALUES ('풀스택', '1401호');
+23/01/02 23:32:50 999 [debug] : DELETE FROM department WHERE deptno='300'
+23/01/02 23:32:51 002 [debug] : UPDATE department SET dname='수정된학과', loc='수정된위치'  WHERE deptno='300';
+23/01/02 23:32:51 005 [debug] : SELECT COUNT(*) AS cnt FROM department
+23/01/02 23:32:51 029 [debug] : SELECT  profno, name, userid, position, sal,  date_format(hiredate, '%Y-%m-%d') as h_date,  comm, p.deptno, dname, loc  FROM professor as p  INNER JOIN department as d  ON p.deptno = d.deptno
+23/01/02 23:32:51 036 [info] :  >> Connection 반납됨 [threadId=29]
+23/01/02 23:33:29 276 [info] :  >> DATABASE 접속됨 [threadId=30]
+23/01/02 23:33:29 279 [info] :  >> Connection 임대됨 [threadId=30]
+23/01/02 23:34:27 311 [info] :  >> DATABASE 접속됨 [threadId=31]
+23/01/02 23:34:27 314 [info] :  >> Connection 임대됨 [threadId=31]
+23/01/02 23:34:48 848 [info] :  >> DATABASE 접속됨 [threadId=32]
+23/01/02 23:34:48 857 [info] :  >> Connection 임대됨 [threadId=32]
+23/01/02 23:35:10 157 [info] :  >> DATABASE 접속됨 [threadId=33]
+23/01/02 23:35:10 160 [info] :  >> Connection 임대됨 [threadId=33]
+23/01/02 23:35:16 011 [info] :  >> DATABASE 접속됨 [threadId=34]
+23/01/02 23:35:16 014 [info] :  >> Connection 임대됨 [threadId=34]
+23/01/02 23:36:03 906 [info] :  >> DATABASE 접속됨 [threadId=35]
+23/01/02 23:36:03 909 [info] :  >> Connection 임대됨 [threadId=35]
+23/01/02 23:36:25 966 [info] :  >> DATABASE 접속됨 [threadId=36]
+23/01/02 23:36:25 969 [info] :  >> Connection 임대됨 [threadId=36]
+23/01/02 23:36:40 322 [info] :  >> DATABASE 접속됨 [threadId=37]
+23/01/02 23:36:40 331 [info] :  >> Connection 임대됨 [threadId=37]
+23/01/02 23:47:40 977 [info] :  >> DATABASE 접속됨 [threadId=38]
+23/01/02 23:47:40 985 [info] :  >> Connection 임대됨 [threadId=38]
+23/01/02 23:47:41 056 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno='9902';
+23/01/02 23:47:41 096 [debug] : SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor  WHERE  position LIKE concat('%', '교수', '%')  ORDER BY profno DESC  LIMIT 0, 3
